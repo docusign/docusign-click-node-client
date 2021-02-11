@@ -769,16 +769,16 @@
      * Gets the Clickwraps for an account
      * @param {String} accountId 
      * @param {String} clickwrapId 
-     * @param {String} clientUserId 
-     * @param {String} status 
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {String} optsOrCallback.clientUserId 
      * @param {String} optsOrCallback.fromDate 
      * @param {String} optsOrCallback.pageNumber 
+     * @param {String} optsOrCallback.status 
      * @param {String} optsOrCallback.toDate 
      * @param {module:api/AccountsApi~getClickwrapAgreementsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ClickwrapAgreementsResponse}
      */
-    this.getClickwrapAgreements = function(accountId, clickwrapId, clientUserId, status, optsOrCallback, callback) {
+    this.getClickwrapAgreements = function(accountId, clickwrapId, optsOrCallback, callback) {
       optsOrCallback = optsOrCallback || {};
 
       if (typeof optsOrCallback === 'function') {
@@ -798,16 +798,6 @@
         throw new Error("Missing the required parameter 'clickwrapId' when calling getClickwrapAgreements");
       }
 
-      // verify the required parameter 'clientUserId' is set
-      if (clientUserId === undefined || clientUserId === null) {
-        throw new Error("Missing the required parameter 'clientUserId' when calling getClickwrapAgreements");
-      }
-
-      // verify the required parameter 'status' is set
-      if (status === undefined || status === null) {
-        throw new Error("Missing the required parameter 'status' when calling getClickwrapAgreements");
-      }
-
       if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
         if (typeof optsOrCallback !== 'undefined') {
           optsOrCallback = callback;
@@ -820,10 +810,10 @@
         'clickwrapId': clickwrapId
       };
       var queryParams = {
-        'client_user_id': clientUserId,
+        'client_user_id': optsOrCallback['clientUserId'],
         'from_date': optsOrCallback['fromDate'],
         'page_number': optsOrCallback['pageNumber'],
-        'status': status,
+        'status': optsOrCallback['status'],
         'to_date': optsOrCallback['toDate']
       };
       var headerParams = {
@@ -921,8 +911,8 @@
      * @param {String} accountId 
      * @param {String} clickwrapId 
      * @param {String} versionId 
-     * @param {String} clientUserId 
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {String} optsOrCallback.clientUserId 
      * @param {String} optsOrCallback.fromDate 
      * @param {String} optsOrCallback.pageNumber 
      * @param {String} optsOrCallback.status 
@@ -930,7 +920,7 @@
      * @param {module:api/AccountsApi~getClickwrapVersionAgreementsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ClickwrapAgreementsResponse}
      */
-    this.getClickwrapVersionAgreements = function(accountId, clickwrapId, versionId, clientUserId, optsOrCallback, callback) {
+    this.getClickwrapVersionAgreements = function(accountId, clickwrapId, versionId, optsOrCallback, callback) {
       optsOrCallback = optsOrCallback || {};
 
       if (typeof optsOrCallback === 'function') {
@@ -955,11 +945,6 @@
         throw new Error("Missing the required parameter 'versionId' when calling getClickwrapVersionAgreements");
       }
 
-      // verify the required parameter 'clientUserId' is set
-      if (clientUserId === undefined || clientUserId === null) {
-        throw new Error("Missing the required parameter 'clientUserId' when calling getClickwrapVersionAgreements");
-      }
-
       if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
         if (typeof optsOrCallback !== 'undefined') {
           optsOrCallback = callback;
@@ -973,7 +958,7 @@
         'versionId': versionId
       };
       var queryParams = {
-        'client_user_id': clientUserId,
+        'client_user_id': optsOrCallback['clientUserId'],
         'from_date': optsOrCallback['fromDate'],
         'page_number': optsOrCallback['pageNumber'],
         'status': optsOrCallback['status'],
@@ -1009,8 +994,8 @@
      * @param {String} accountId 
      * @param {String} clickwrapId 
      * @param {String} versionNumber 
-     * @param {String} clientUserId 
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {String} optsOrCallback.clientUserId 
      * @param {String} optsOrCallback.fromDate 
      * @param {String} optsOrCallback.pageNumber 
      * @param {String} optsOrCallback.status 
@@ -1018,7 +1003,7 @@
      * @param {module:api/AccountsApi~getClickwrapVersionAgreementsByNumberCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ClickwrapAgreementsResponse}
      */
-    this.getClickwrapVersionAgreementsByNumber = function(accountId, clickwrapId, versionNumber, clientUserId, optsOrCallback, callback) {
+    this.getClickwrapVersionAgreementsByNumber = function(accountId, clickwrapId, versionNumber, optsOrCallback, callback) {
       optsOrCallback = optsOrCallback || {};
 
       if (typeof optsOrCallback === 'function') {
@@ -1043,11 +1028,6 @@
         throw new Error("Missing the required parameter 'versionNumber' when calling getClickwrapVersionAgreementsByNumber");
       }
 
-      // verify the required parameter 'clientUserId' is set
-      if (clientUserId === undefined || clientUserId === null) {
-        throw new Error("Missing the required parameter 'clientUserId' when calling getClickwrapVersionAgreementsByNumber");
-      }
-
       if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
         if (typeof optsOrCallback !== 'undefined') {
           optsOrCallback = callback;
@@ -1061,7 +1041,7 @@
         'versionNumber': versionNumber
       };
       var queryParams = {
-        'client_user_id': clientUserId,
+        'client_user_id': optsOrCallback['clientUserId'],
         'from_date': optsOrCallback['fromDate'],
         'page_number': optsOrCallback['pageNumber'],
         'status': optsOrCallback['status'],
@@ -1222,6 +1202,7 @@
      * @param {String} optsOrCallback.fromDate 
      * @param {String} optsOrCallback.ownerUserId 
      * @param {String} optsOrCallback.pageNumber 
+     * @param {String} optsOrCallback.shared 
      * @param {String} optsOrCallback.status 
      * @param {String} optsOrCallback.toDate 
      * @param {module:api/AccountsApi~getClickwrapsCallback} callback The callback function, accepting three arguments: error, data, response
@@ -1256,6 +1237,7 @@
         'from_date': optsOrCallback['fromDate'],
         'ownerUserId': optsOrCallback['ownerUserId'],
         'page_number': optsOrCallback['pageNumber'],
+        'shared': optsOrCallback['shared'],
         'status': optsOrCallback['status'],
         'to_date': optsOrCallback['toDate']
       };
