@@ -66,8 +66,11 @@
       if (data.hasOwnProperty('fieldsToNull')) {
         obj['fieldsToNull'] = ApiClient.convertToType(data['fieldsToNull'], 'String');
       }
-      if (data.hasOwnProperty('isMajorversion')) {
-        obj['isMajorversion'] = ApiClient.convertToType(data['isMajorversion'], 'Boolean');
+      if (data.hasOwnProperty('isMajorVersion')) {
+        obj['isMajorVersion'] = ApiClient.convertToType(data['isMajorVersion'], 'Boolean');
+      }
+      if (data.hasOwnProperty('isShared')) {
+        obj['isShared'] = ApiClient.convertToType(data['isShared'], 'Boolean');
       }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
@@ -115,9 +118,14 @@
   exports.prototype['fieldsToNull'] = undefined;
   /**
    * 
-   * @member {Boolean} isMajorversion
+   * @member {Boolean} isMajorVersion
    */
-  exports.prototype['isMajorversion'] = undefined;
+  exports.prototype['isMajorVersion'] = undefined;
+  /**
+   * 
+   * @member {Boolean} isShared
+   */
+  exports.prototype['isShared'] = undefined;
   /**
    * 
    * @member {String} name
