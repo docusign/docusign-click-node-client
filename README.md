@@ -1,11 +1,11 @@
-# The Official DocuSign Click Node Client
+# The Official DocuSign Click Node Client SDK
 
 [![NPM version][npm-image]][npm-url]
 [![NPM downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 
-[NPM module](https://www.npmjs.com/package/docusign-click) that wraps the <a href="https://www.docusign.com">DocuSign</a> Click API
+[NPM module](https://www.npmjs.com/package/docusign-click)
 
 [Documentation about the DocuSign Click API](https://developers.docusign.com/docs/click-api)
 
@@ -23,11 +23,9 @@ commented out
 
 - Node 4+
 
-## Note:
-
-This SDK will soon be provided as open-source for cases where you would like to make additional changes that the SDK does not provide out-of-the-box. If you simply want to use the SDK with any of the examples shown in the [Developer Center](https://developers.docusign.com/docs/click-api/how-to/), follow the installation instructions below.
-
 ## Installation
+
+This SDK is provided as open source, which enables you to customize its functionality to suit your particular use case. To do so, download or clone the repository. If the SDK’s given functionality meets your integration needs, or if you simply want to use the SDK with any of the examples shown in the [Developer Center](https://developers.docusign.com/docs/click-api/how-to/), you merely need to install it by following the instructions below.
 
 ## NPM:
 
@@ -51,20 +49,15 @@ This client has the following external dependencies:
 - Passport-oauth2
 - Path
 
-## Code Examples
+## Code examples
 
-### Launchers
+DocuSign provides a sample application code referred to as a [Launcher](https://github.com/docusign/code-examples-node). The Launcher includes, besides a full set of eSignature code examples, a set of code examples and associated source files for five common Click use cases. These examples can use either the [Authorization Code Grant](https://developers.docusign.com/platform/auth/authcode/) or [JSON Web Token (JWT) Grant](https://developers.docusign.com/platform/auth/jwt/) authentication flow.
 
-DocuSign provides a sample application referred to as a [Launcher](https://github.com/docusign/code-examples-node/). The Launcher contains a set of 6 common use cases and associated source files. These examples use DocuSign&#39;s [Authorization Code Grant](https://developers.docusign.com/platform/auth/authcode/authcode-get-token/) flow.
+## OAuth implementations
 
-## OAuth Implementations
+For details regarding which type of OAuth grant will work best for your DocuSign integration, see the [Choose OAuth Type](https://developers.docusign.com/platform/auth/choose/) guide located on the [DocuSign Developer Center](https://developers.docusign.com/).
 
-For details regarding which type of OAuth grant will work best for your DocuSign integration, see the [Click API Authentication Overview](https://developers.docusign.com/docs/click-api/click101/auth/) guide located on the [DocuSign Developer Center](https://developers.docusign.com/).
-
-For security purposes, DocuSign recommends using the [Authorization Code Grant](https://developers.docusign.com/platform/auth/authcode/authcode-get-token/) or [JWT](https://developers.docusign.com/platform/auth/jwt/) flow.
-
-There are other use-case scenarios, such as **single-page applications** (SPA) that use **Cross-Origin Resource Sharing** (CORS), or where there may not be a user to interact with your Service Account. For these use cases, DocuSign also supports [JWT](https://developers.docusign.com/platform/auth/jwt/jwt-get-token/) and [Implicit](https://developers.docusign.com/platform/auth/implicit/implicit-get-token/) grants. For Code eExamples, see the links below:
-
+For security purposes, DocuSign recommends using the [Authorization Code Grant](https://developers.docusign.com/platform/auth/authcode/) flow.
 
 ## Support
 
@@ -82,3 +75,9 @@ The DocuSign Click Node Client is licensed under the [MIT License](https://githu
 [travis-url]: https://travis-ci.org/docusign/docusign-node-client
 [coveralls-image]: https://coveralls.io/repos/github/docusign/DocuSign-Node-Client/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/docusign/DocuSign-Node-Client?branch=master
+
+### Additional resources
+* [DocuSign Developer Center](https://developers.docusign.com)
+* [DocuSign API on Twitter](https://twitter.com/docusignapi)
+* [DocuSign For Developers on LinkedIn](https://www.linkedin.com/showcase/docusign-for-developers/)
+* [DocuSign For Developers on YouTube](https://www.youtube.com/channel/UCJSJ2kMs_qeQotmw4-lX2NQ)

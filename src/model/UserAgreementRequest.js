@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient'], factory);
+    define(['ApiClient', 'model/DocumentData'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./DocumentData'));
   } else {
     // Browser globals (root is window)
     if (!root.DocusignClick) {
       root.DocusignClick = {};
     }
-    root.DocusignClick.UserAgreementRequest = factory(root.DocusignClick.ApiClient);
+    root.DocusignClick.UserAgreementRequest = factory(root.DocusignClick.ApiClient, root.DocusignClick.DocumentData);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, DocumentData) {
   'use strict';
 
 
@@ -57,8 +57,8 @@
       if (data.hasOwnProperty('clientUserId')) {
         obj['clientUserId'] = ApiClient.convertToType(data['clientUserId'], 'String');
       }
-      if (data.hasOwnProperty('hostOrigin')) {
-        obj['hostOrigin'] = ApiClient.convertToType(data['hostOrigin'], 'String');
+      if (data.hasOwnProperty('documentData')) {
+        obj['documentData'] = DocumentData.constructFromObject(data['documentData']);
       }
       if (data.hasOwnProperty('metadata')) {
         obj['metadata'] = ApiClient.convertToType(data['metadata'], 'String');
@@ -73,10 +73,9 @@
    */
   exports.prototype['clientUserId'] = undefined;
   /**
-   * 
-   * @member {String} hostOrigin
+   * @member {module:model/DocumentData} documentData
    */
-  exports.prototype['hostOrigin'] = undefined;
+  exports.prototype['documentData'] = undefined;
   /**
    * 
    * @member {String} metadata
