@@ -90,9 +90,6 @@
       if (data.hasOwnProperty('hasDeclineButton')) {
         obj['hasDeclineButton'] = ApiClient.convertToType(data['hasDeclineButton'], 'Boolean');
       }
-      if (data.hasOwnProperty('hostOrigin')) {
-        obj['hostOrigin'] = ApiClient.convertToType(data['hostOrigin'], 'String');
-      }
       if (data.hasOwnProperty('mustRead')) {
         obj['mustRead'] = ApiClient.convertToType(data['mustRead'], 'Boolean');
       }
@@ -172,11 +169,6 @@
    * @member {Boolean} hasDeclineButton
    */
   exports.prototype['hasDeclineButton'] = undefined;
-  /**
-   * 
-   * @member {String} hostOrigin
-   */
-  exports.prototype['hostOrigin'] = undefined;
   /**
    * 
    * @member {Boolean} mustRead

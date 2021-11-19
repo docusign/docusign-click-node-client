@@ -379,71 +379,6 @@
     };
 
     /**
-     * (Optional) Callback function to receive the result of the deleteClickwrapVersionByNumber operation. If none specified a Promise will be returned.
-     * @callback module:api/AccountsApi~deleteClickwrapVersionByNumberCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/ClickwrapVersionSummaryResponse} data The data returned by the service call.
-     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
-     */
-
-    /**
-     * Delete a Clickwrap version specified by versionNumber. Use versionId instead of versionNumber
-     * @param {String} accountId 
-     * @param {String} clickwrapId 
-     * @param {String} versionNumber 
-     * @param {module:api/AccountsApi~deleteClickwrapVersionByNumberCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/ClickwrapVersionSummaryResponse}
-     */
-    this.deleteClickwrapVersionByNumber = function(accountId, clickwrapId, versionNumber, callback) {
-      var postBody = null;
-
-      // verify the required parameter 'accountId' is set
-      if (accountId === undefined || accountId === null) {
-        throw new Error("Missing the required parameter 'accountId' when calling deleteClickwrapVersionByNumber");
-      }
-
-      // verify the required parameter 'clickwrapId' is set
-      if (clickwrapId === undefined || clickwrapId === null) {
-        throw new Error("Missing the required parameter 'clickwrapId' when calling deleteClickwrapVersionByNumber");
-      }
-
-      // verify the required parameter 'versionNumber' is set
-      if (versionNumber === undefined || versionNumber === null) {
-        throw new Error("Missing the required parameter 'versionNumber' when calling deleteClickwrapVersionByNumber");
-      }
-
-      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
-        if (typeof optsOrCallback !== 'undefined') {
-          optsOrCallback = callback;
-        }
-        callback = arguments[arguments.length-1];
-      }
-
-      var pathParams = {
-        'accountId': accountId,
-        'clickwrapId': clickwrapId,
-        'versionNumber': versionNumber
-      };
-      var queryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['docusignAccessCode'];
-      var contentTypes = [];
-      var accepts = ['application/json'];
-      var returnType = ClickwrapVersionSummaryResponse;
-
-      return this.apiClient.callApi(
-        '/v1/accounts/{accountId}/clickwraps/{clickwrapId}/versions/{versionNumber}', 'DELETE',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    };
-
-    /**
      * (Optional) Callback function to receive the result of the deleteClickwrapVersions operation. If none specified a Promise will be returned.
      * @callback module:api/AccountsApi~deleteClickwrapVersionsCallback
      * @param {String} error Error message, if any.
@@ -581,6 +516,7 @@
      */
 
     /**
+     * Gets the agreement by a provided agreement ID
      * @param {String} accountId 
      * @param {String} clickwrapId 
      * @param {String} agreementId 
@@ -640,17 +576,28 @@
      * (Optional) Callback function to receive the result of the getAgreementPdf operation. If none specified a Promise will be returned.
      * @callback module:api/AccountsApi~getAgreementPdfCallback
      * @param {String} error Error message, if any.
-     * @param data This operation does not return a value.
+     * @param {Object} data The data returned by the service call.
      * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
      */
 
     /**
+     * Downloads the agreement PDF and optionally certificate of completion.
      * @param {String} accountId 
      * @param {String} clickwrapId 
      * @param {String} agreementId 
+     * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {String} optsOrCallback.includeCoc 
      * @param {module:api/AccountsApi~getAgreementPdfCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link Object}
      */
-    this.getAgreementPdf = function(accountId, clickwrapId, agreementId, callback) {
+    this.getAgreementPdf = function(accountId, clickwrapId, agreementId, optsOrCallback, callback) {
+      optsOrCallback = optsOrCallback || {};
+
+      if (typeof optsOrCallback === 'function') {
+        callback = optsOrCallback;
+        optsOrCallback = {};
+      }
+
       var postBody = null;
 
       // verify the required parameter 'accountId' is set
@@ -681,6 +628,7 @@
         'agreementId': agreementId
       };
       var queryParams = {
+        'include_coc': optsOrCallback['includeCoc']
       };
       var headerParams = {
       };
@@ -689,8 +637,8 @@
 
       var authNames = ['docusignAccessCode'];
       var contentTypes = [];
-      var accepts = ['application/json'];
-      var returnType = null;
+      var accepts = ['application/pdf'];
+      var returnType = Object;
 
       return this.apiClient.callApi(
         '/v1/accounts/{accountId}/clickwraps/{clickwrapId}/agreements/{agreementId}/download', 'GET',
@@ -766,7 +714,7 @@
      */
 
     /**
-     * Gets the Clickwraps for an account
+     * Gets the agreement responses for a clickwrap
      * @param {String} accountId 
      * @param {String} clickwrapId 
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
@@ -982,154 +930,6 @@
     };
 
     /**
-     * (Optional) Callback function to receive the result of the getClickwrapVersionAgreementsByNumber operation. If none specified a Promise will be returned.
-     * @callback module:api/AccountsApi~getClickwrapVersionAgreementsByNumberCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/ClickwrapAgreementsResponse} data The data returned by the service call.
-     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
-     */
-
-    /**
-     * Gets the agreement responses for a clickwrap version
-     * @param {String} accountId 
-     * @param {String} clickwrapId 
-     * @param {String} versionNumber 
-     * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
-     * @param {String} optsOrCallback.clientUserId 
-     * @param {String} optsOrCallback.fromDate 
-     * @param {String} optsOrCallback.pageNumber 
-     * @param {String} optsOrCallback.status 
-     * @param {String} optsOrCallback.toDate 
-     * @param {module:api/AccountsApi~getClickwrapVersionAgreementsByNumberCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/ClickwrapAgreementsResponse}
-     */
-    this.getClickwrapVersionAgreementsByNumber = function(accountId, clickwrapId, versionNumber, optsOrCallback, callback) {
-      optsOrCallback = optsOrCallback || {};
-
-      if (typeof optsOrCallback === 'function') {
-        callback = optsOrCallback;
-        optsOrCallback = {};
-      }
-
-      var postBody = null;
-
-      // verify the required parameter 'accountId' is set
-      if (accountId === undefined || accountId === null) {
-        throw new Error("Missing the required parameter 'accountId' when calling getClickwrapVersionAgreementsByNumber");
-      }
-
-      // verify the required parameter 'clickwrapId' is set
-      if (clickwrapId === undefined || clickwrapId === null) {
-        throw new Error("Missing the required parameter 'clickwrapId' when calling getClickwrapVersionAgreementsByNumber");
-      }
-
-      // verify the required parameter 'versionNumber' is set
-      if (versionNumber === undefined || versionNumber === null) {
-        throw new Error("Missing the required parameter 'versionNumber' when calling getClickwrapVersionAgreementsByNumber");
-      }
-
-      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
-        if (typeof optsOrCallback !== 'undefined') {
-          optsOrCallback = callback;
-        }
-        callback = arguments[arguments.length-1];
-      }
-
-      var pathParams = {
-        'accountId': accountId,
-        'clickwrapId': clickwrapId,
-        'versionNumber': versionNumber
-      };
-      var queryParams = {
-        'client_user_id': optsOrCallback['clientUserId'],
-        'from_date': optsOrCallback['fromDate'],
-        'page_number': optsOrCallback['pageNumber'],
-        'status': optsOrCallback['status'],
-        'to_date': optsOrCallback['toDate']
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['docusignAccessCode'];
-      var contentTypes = [];
-      var accepts = ['application/json'];
-      var returnType = ClickwrapAgreementsResponse;
-
-      return this.apiClient.callApi(
-        '/v1/accounts/{accountId}/clickwraps/{clickwrapId}/versions/{versionNumber}/users', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    };
-
-    /**
-     * (Optional) Callback function to receive the result of the getClickwrapVersionByNumber operation. If none specified a Promise will be returned.
-     * @callback module:api/AccountsApi~getClickwrapVersionByNumberCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/ClickwrapVersionResponse} data The data returned by the service call.
-     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
-     */
-
-    /**
-     * Gets the Clickwrap version by clickwrapId and versionNumber for an account
-     * @param {String} accountId 
-     * @param {String} clickwrapId 
-     * @param {String} versionNumber 
-     * @param {module:api/AccountsApi~getClickwrapVersionByNumberCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/ClickwrapVersionResponse}
-     */
-    this.getClickwrapVersionByNumber = function(accountId, clickwrapId, versionNumber, callback) {
-      var postBody = null;
-
-      // verify the required parameter 'accountId' is set
-      if (accountId === undefined || accountId === null) {
-        throw new Error("Missing the required parameter 'accountId' when calling getClickwrapVersionByNumber");
-      }
-
-      // verify the required parameter 'clickwrapId' is set
-      if (clickwrapId === undefined || clickwrapId === null) {
-        throw new Error("Missing the required parameter 'clickwrapId' when calling getClickwrapVersionByNumber");
-      }
-
-      // verify the required parameter 'versionNumber' is set
-      if (versionNumber === undefined || versionNumber === null) {
-        throw new Error("Missing the required parameter 'versionNumber' when calling getClickwrapVersionByNumber");
-      }
-
-      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
-        if (typeof optsOrCallback !== 'undefined') {
-          optsOrCallback = callback;
-        }
-        callback = arguments[arguments.length-1];
-      }
-
-      var pathParams = {
-        'accountId': accountId,
-        'clickwrapId': clickwrapId,
-        'versionNumber': versionNumber
-      };
-      var queryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['docusignAccessCode'];
-      var contentTypes = [];
-      var accepts = ['application/json'];
-      var returnType = ClickwrapVersionResponse;
-
-      return this.apiClient.callApi(
-        '/v1/accounts/{accountId}/clickwraps/{clickwrapId}/versions/{versionNumber}', 'GET',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    };
-
-    /**
      * (Optional) Callback function to receive the result of the getClickwrapVersions operation. If none specified a Promise will be returned.
      * @callback module:api/AccountsApi~getClickwrapVersionsCallback
      * @param {String} error Error message, if any.
@@ -1199,10 +999,11 @@
      * Gets the Clickwraps for an account
      * @param {String} accountId 
      * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
+     * @param {String} optsOrCallback.filter 
      * @param {String} optsOrCallback.fromDate 
+     * @param {String} optsOrCallback.name 
      * @param {String} optsOrCallback.ownerUserId 
      * @param {String} optsOrCallback.pageNumber 
-     * @param {String} optsOrCallback.shared 
      * @param {String} optsOrCallback.status 
      * @param {String} optsOrCallback.toDate 
      * @param {module:api/AccountsApi~getClickwrapsCallback} callback The callback function, accepting three arguments: error, data, response
@@ -1234,10 +1035,11 @@
         'accountId': accountId
       };
       var queryParams = {
+        'filter': optsOrCallback['filter'],
         'from_date': optsOrCallback['fromDate'],
+        'name': optsOrCallback['name'],
         'ownerUserId': optsOrCallback['ownerUserId'],
         'page_number': optsOrCallback['pageNumber'],
-        'shared': optsOrCallback['shared'],
         'status': optsOrCallback['status'],
         'to_date': optsOrCallback['toDate']
       };
@@ -1438,80 +1240,6 @@
 
       return this.apiClient.callApi(
         '/v1/accounts/{accountId}/clickwraps/{clickwrapId}/versions/{versionId}', 'PUT',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    };
-
-    /**
-     * (Optional) Callback function to receive the result of the updateClickwrapVersionByNumber operation. If none specified a Promise will be returned.
-     * @callback module:api/AccountsApi~updateClickwrapVersionByNumberCallback
-     * @param {String} error Error message, if any.
-     * @param {module:model/ClickwrapVersionSummaryResponse} data The data returned by the service call.
-     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
-     */
-
-    /**
-     * Updates the clickwrap version specified by versionNumber. Use versionId instead of versionNumber
-     * @param {String} accountId 
-     * @param {String} clickwrapId 
-     * @param {String} versionNumber 
-     * @param {Object} optsOrCallback Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.
-     * @param {module:model/ClickwrapRequest} optsOrCallback.clickwrapRequest 
-     * @param {module:api/AccountsApi~updateClickwrapVersionByNumberCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/ClickwrapVersionSummaryResponse}
-     */
-    this.updateClickwrapVersionByNumber = function(accountId, clickwrapId, versionNumber, optsOrCallback, callback) {
-      optsOrCallback = optsOrCallback || {};
-
-      if (typeof optsOrCallback === 'function') {
-        callback = optsOrCallback;
-        optsOrCallback = {};
-      }
-
-      var postBody = optsOrCallback['clickwrapRequest'];
-
-      // verify the required parameter 'accountId' is set
-      if (accountId === undefined || accountId === null) {
-        throw new Error("Missing the required parameter 'accountId' when calling updateClickwrapVersionByNumber");
-      }
-
-      // verify the required parameter 'clickwrapId' is set
-      if (clickwrapId === undefined || clickwrapId === null) {
-        throw new Error("Missing the required parameter 'clickwrapId' when calling updateClickwrapVersionByNumber");
-      }
-
-      // verify the required parameter 'versionNumber' is set
-      if (versionNumber === undefined || versionNumber === null) {
-        throw new Error("Missing the required parameter 'versionNumber' when calling updateClickwrapVersionByNumber");
-      }
-
-      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
-        if (typeof optsOrCallback !== 'undefined') {
-          optsOrCallback = callback;
-        }
-        callback = arguments[arguments.length-1];
-      }
-
-      var pathParams = {
-        'accountId': accountId,
-        'clickwrapId': clickwrapId,
-        'versionNumber': versionNumber
-      };
-      var queryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['docusignAccessCode'];
-      var contentTypes = [];
-      var accepts = ['application/json'];
-      var returnType = ClickwrapVersionSummaryResponse;
-
-      return this.apiClient.callApi(
-        '/v1/accounts/{accountId}/clickwraps/{clickwrapId}/versions/{versionNumber}', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
