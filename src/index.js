@@ -11,12 +11,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['Configuration', 'ApiClient', 'model/ClickwrapAgreementsResponse', 'model/ClickwrapDeleteResponse', 'model/ClickwrapRequest', 'model/ClickwrapScheduledReacceptance', 'model/ClickwrapTransferRequest', 'model/ClickwrapVersion', 'model/ClickwrapVersionDeleteResponse', 'model/ClickwrapVersionResponse', 'model/ClickwrapVersionSummaryResponse', 'model/ClickwrapVersionsDeleteResponse', 'model/ClickwrapVersionsPagedResponse', 'model/ClickwrapVersionsResponse', 'model/ClickwrapsDeleteResponse', 'model/DisplaySettings', 'model/Document', 'model/DocumentData', 'model/ErrorDetails', 'model/ServiceInformation', 'model/ServiceVersion', 'model/UserAgreementRequest', 'model/UserAgreementResponse', 'api/AccountsApi'], factory);
+    define(['Configuration', 'ApiClient', 'model/ClickwrapAgreementsResponse', 'model/ClickwrapDeleteResponse', 'model/ClickwrapRequest', 'model/ClickwrapScheduledReacceptance', 'model/ClickwrapTransferRequest', 'model/ClickwrapVersion', 'model/ClickwrapVersionDeleteResponse', 'model/ClickwrapVersionResponse', 'model/ClickwrapVersionSummaryResponse', 'model/ClickwrapVersionsDeleteResponse', 'model/ClickwrapVersionsPagedResponse', 'model/ClickwrapVersionsResponse', 'model/ClickwrapsDeleteResponse', 'model/DisplaySettings', 'model/Document', 'model/ErrorDetails', 'model/ServiceInformation', 'model/ServiceVersion', 'model/UserAgreementRequest', 'model/UserAgreementResponse', 'api/AccountsApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./Configuration'), require('./ApiClient'), require('./model/ClickwrapAgreementsResponse'), require('./model/ClickwrapDeleteResponse'), require('./model/ClickwrapRequest'), require('./model/ClickwrapScheduledReacceptance'), require('./model/ClickwrapTransferRequest'), require('./model/ClickwrapVersion'), require('./model/ClickwrapVersionDeleteResponse'), require('./model/ClickwrapVersionResponse'), require('./model/ClickwrapVersionSummaryResponse'), require('./model/ClickwrapVersionsDeleteResponse'), require('./model/ClickwrapVersionsPagedResponse'), require('./model/ClickwrapVersionsResponse'), require('./model/ClickwrapsDeleteResponse'), require('./model/DisplaySettings'), require('./model/Document'), require('./model/DocumentData'), require('./model/ErrorDetails'), require('./model/ServiceInformation'), require('./model/ServiceVersion'), require('./model/UserAgreementRequest'), require('./model/UserAgreementResponse'), require('./api/AccountsApi'));
+    module.exports = factory(require('./Configuration'), require('./ApiClient'), require('./model/ClickwrapAgreementsResponse'), require('./model/ClickwrapDeleteResponse'), require('./model/ClickwrapRequest'), require('./model/ClickwrapScheduledReacceptance'), require('./model/ClickwrapTransferRequest'), require('./model/ClickwrapVersion'), require('./model/ClickwrapVersionDeleteResponse'), require('./model/ClickwrapVersionResponse'), require('./model/ClickwrapVersionSummaryResponse'), require('./model/ClickwrapVersionsDeleteResponse'), require('./model/ClickwrapVersionsPagedResponse'), require('./model/ClickwrapVersionsResponse'), require('./model/ClickwrapsDeleteResponse'), require('./model/DisplaySettings'), require('./model/Document'), require('./model/ErrorDetails'), require('./model/ServiceInformation'), require('./model/ServiceVersion'), require('./model/UserAgreementRequest'), require('./model/UserAgreementResponse'), require('./api/AccountsApi'));
   }
-}(function(Configuration, ApiClient, ClickwrapAgreementsResponse, ClickwrapDeleteResponse, ClickwrapRequest, ClickwrapScheduledReacceptance, ClickwrapTransferRequest, ClickwrapVersion, ClickwrapVersionDeleteResponse, ClickwrapVersionResponse, ClickwrapVersionSummaryResponse, ClickwrapVersionsDeleteResponse, ClickwrapVersionsPagedResponse, ClickwrapVersionsResponse, ClickwrapsDeleteResponse, DisplaySettings, Document, DocumentData, ErrorDetails, ServiceInformation, ServiceVersion, UserAgreementRequest, UserAgreementResponse, AccountsApi) {
+}(function(Configuration, ApiClient, ClickwrapAgreementsResponse, ClickwrapDeleteResponse, ClickwrapRequest, ClickwrapScheduledReacceptance, ClickwrapTransferRequest, ClickwrapVersion, ClickwrapVersionDeleteResponse, ClickwrapVersionResponse, ClickwrapVersionSummaryResponse, ClickwrapVersionsDeleteResponse, ClickwrapVersionsPagedResponse, ClickwrapVersionsResponse, ClickwrapsDeleteResponse, DisplaySettings, Document, ErrorDetails, ServiceInformation, ServiceVersion, UserAgreementRequest, UserAgreementResponse, AccountsApi) {
   'use strict';
 
   /**
@@ -135,11 +135,6 @@
      * @property {module:model/Document}
      */
     Document: Document,
-    /**
-     * The DocumentData model constructor.
-     * @property {module:model/DocumentData}
-     */
-    DocumentData: DocumentData,
     /**
      * The ErrorDetails model constructor.
      * @property {module:model/ErrorDetails}
