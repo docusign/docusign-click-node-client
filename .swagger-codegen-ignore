@@ -30,6 +30,7 @@ git_push.sh
 
 # Project files
 LICENSE
+.travis.yml
 mocha.opts
 
 # Specific src and test files
