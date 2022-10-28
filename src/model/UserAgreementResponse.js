@@ -72,6 +72,9 @@
       if (data.hasOwnProperty('clientUserId')) {
         obj['clientUserId'] = ApiClient.convertToType(data['clientUserId'], 'String');
       }
+      if (data.hasOwnProperty('consumerDisclosureEnabled')) {
+        obj['consumerDisclosureEnabled'] = ApiClient.convertToType(data['consumerDisclosureEnabled'], 'Boolean');
+      }
       if (data.hasOwnProperty('consumerDisclosureHtml')) {
         obj['consumerDisclosureHtml'] = ApiClient.convertToType(data['consumerDisclosureHtml'], 'String');
       }
@@ -80,6 +83,9 @@
       }
       if (data.hasOwnProperty('declinedOn')) {
         obj['declinedOn'] = ApiClient.convertToType(data['declinedOn'], Object);
+      }
+      if (data.hasOwnProperty('documentData')) {
+        obj['documentData'] = ApiClient.convertToType(data['documentData'], {'String': 'String'});
       }
       if (data.hasOwnProperty('documents')) {
         obj['documents'] = ApiClient.convertToType(data['documents'], [Document]);
@@ -92,6 +98,9 @@
       }
       if (data.hasOwnProperty('status')) {
         obj['status'] = ApiClient.convertToType(data['status'], 'String');
+      }
+      if (data.hasOwnProperty('style')) {
+        obj['style'] = ApiClient.convertToType(data['style'], {'String': 'String'});
       }
       if (data.hasOwnProperty('version')) {
         obj['version'] = ApiClient.convertToType(data['version'], 'String');
@@ -138,6 +147,11 @@
   exports.prototype['clientUserId'] = undefined;
   /**
    * 
+   * @member {Boolean} consumerDisclosureEnabled
+   */
+  exports.prototype['consumerDisclosureEnabled'] = undefined;
+  /**
+   * 
    * @member {String} consumerDisclosureHtml
    */
   exports.prototype['consumerDisclosureHtml'] = undefined;
@@ -151,6 +165,11 @@
    * @member {Object} declinedOn
    */
   exports.prototype['declinedOn'] = undefined;
+  /**
+   * 
+   * @member {Object.<String, String>} documentData
+   */
+  exports.prototype['documentData'] = undefined;
   /**
    * 
    * @member {Array.<module:model/Document>} documents
@@ -170,6 +189,11 @@
    * @member {String} status
    */
   exports.prototype['status'] = undefined;
+  /**
+   * 
+   * @member {Object.<String, String>} style
+   */
+  exports.prototype['style'] = undefined;
   /**
    * 
    * @member {String} version

@@ -105,6 +105,9 @@
       if (data.hasOwnProperty('sendToEmail')) {
         obj['sendToEmail'] = ApiClient.convertToType(data['sendToEmail'], 'Boolean');
       }
+      if (data.hasOwnProperty('statementAlignment')) {
+        obj['statementAlignment'] = ApiClient.convertToType(data['statementAlignment'], 'String');
+      }
     }
     return obj;
   }
@@ -194,6 +197,11 @@
    * @member {Boolean} sendToEmail
    */
   exports.prototype['sendToEmail'] = undefined;
+  /**
+   * 
+   * @member {String} statementAlignment
+   */
+  exports.prototype['statementAlignment'] = undefined;
 
 
 

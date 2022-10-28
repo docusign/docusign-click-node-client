@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/ClickwrapScheduledReacceptance'], factory);
+    define(['ApiClient', 'model/ClickwrapScheduledReacceptance', 'model/DataField'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./ClickwrapScheduledReacceptance'));
+    module.exports = factory(require('../ApiClient'), require('./ClickwrapScheduledReacceptance'), require('./DataField'));
   } else {
     // Browser globals (root is window)
     if (!root.DocusignClick) {
       root.DocusignClick = {};
     }
-    root.DocusignClick.ClickwrapVersionDeleteResponse = factory(root.DocusignClick.ApiClient, root.DocusignClick.ClickwrapScheduledReacceptance);
+    root.DocusignClick.ClickwrapVersionDeleteResponse = factory(root.DocusignClick.ApiClient, root.DocusignClick.ClickwrapScheduledReacceptance, root.DocusignClick.DataField);
   }
-}(this, function(ApiClient, ClickwrapScheduledReacceptance) {
+}(this, function(ApiClient, ClickwrapScheduledReacceptance, DataField) {
   'use strict';
 
 
@@ -59,6 +59,9 @@
       }
       if (data.hasOwnProperty('createdTime')) {
         obj['createdTime'] = ApiClient.convertToType(data['createdTime'], Object);
+      }
+      if (data.hasOwnProperty('dataFields')) {
+        obj['dataFields'] = ApiClient.convertToType(data['dataFields'], [DataField]);
       }
       if (data.hasOwnProperty('deletionMessage')) {
         obj['deletionMessage'] = ApiClient.convertToType(data['deletionMessage'], 'String');
@@ -107,6 +110,11 @@
    * @member {Object} createdTime
    */
   exports.prototype['createdTime'] = undefined;
+  /**
+   * 
+   * @member {Array.<module:model/DataField>} dataFields
+   */
+  exports.prototype['dataFields'] = undefined;
   /**
    * 
    * @member {String} deletionMessage
