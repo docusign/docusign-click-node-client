@@ -21,20 +21,20 @@
     if (!root.DocusignClick) {
       root.DocusignClick = {};
     }
-    root.DocusignClick.UserAgreementRequest = factory(root.DocusignClick.ApiClient);
+    root.DocusignClick.DataField = factory(root.DocusignClick.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
 
   /**
-   * The UserAgreementRequest model module.
-   * @module model/UserAgreementRequest
+   * The DataField model module.
+   * @module model/DataField
    */
 
   /**
-   * Constructs a new <code>UserAgreementRequest</code>.
-   * @alias module:model/UserAgreementRequest
+   * Constructs a new <code>DataField</code>.
+   * @alias module:model/DataField
    * @class
    */
   var exports = function() {
@@ -44,24 +44,24 @@
   };
 
   /**
-   * Constructs a <code>UserAgreementRequest</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>DataField</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/UserAgreementRequest} obj Optional instance to populate.
-   * @return {module:model/UserAgreementRequest} The populated <code>UserAgreementRequest</code> instance.
+   * @param {module:model/DataField} obj Optional instance to populate.
+   * @return {module:model/DataField} The populated <code>DataField</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('clientUserId')) {
-        obj['clientUserId'] = ApiClient.convertToType(data['clientUserId'], 'String');
+      if (data.hasOwnProperty('label')) {
+        obj['label'] = ApiClient.convertToType(data['label'], 'String');
       }
-      if (data.hasOwnProperty('documentData')) {
-        obj['documentData'] = ApiClient.convertToType(data['documentData'], {'String': 'String'});
+      if (data.hasOwnProperty('name')) {
+        obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
-      if (data.hasOwnProperty('metadata')) {
-        obj['metadata'] = ApiClient.convertToType(data['metadata'], 'String');
+      if (data.hasOwnProperty('type')) {
+        obj['type'] = ApiClient.convertToType(data['type'], 'String');
       }
     }
     return obj;
@@ -69,19 +69,19 @@
 
   /**
    * 
-   * @member {String} clientUserId
+   * @member {String} label
    */
-  exports.prototype['clientUserId'] = undefined;
+  exports.prototype['label'] = undefined;
   /**
    * 
-   * @member {Object.<String, String>} documentData
+   * @member {String} name
    */
-  exports.prototype['documentData'] = undefined;
+  exports.prototype['name'] = undefined;
   /**
    * 
-   * @member {String} metadata
+   * @member {String} type
    */
-  exports.prototype['metadata'] = undefined;
+  exports.prototype['type'] = undefined;
 
 
 

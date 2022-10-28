@@ -57,6 +57,9 @@
       if (data.hasOwnProperty('documentBase64')) {
         obj['documentBase64'] = ApiClient.convertToType(data['documentBase64'], 'String');
       }
+      if (data.hasOwnProperty('documentDisplay')) {
+        obj['documentDisplay'] = ApiClient.convertToType(data['documentDisplay'], 'String');
+      }
       if (data.hasOwnProperty('documentHtml')) {
         obj['documentHtml'] = ApiClient.convertToType(data['documentHtml'], 'String');
       }
@@ -65,6 +68,12 @@
       }
       if (data.hasOwnProperty('fileExtension')) {
         obj['fileExtension'] = ApiClient.convertToType(data['fileExtension'], 'String');
+      }
+      if (data.hasOwnProperty('mustRead')) {
+        obj['mustRead'] = ApiClient.convertToType(data['mustRead'], 'Boolean');
+      }
+      if (data.hasOwnProperty('mustView')) {
+        obj['mustView'] = ApiClient.convertToType(data['mustView'], 'Boolean');
       }
       if (data.hasOwnProperty('order')) {
         obj['order'] = ApiClient.convertToType(data['order'], 'Number');
@@ -80,6 +89,11 @@
   exports.prototype['documentBase64'] = undefined;
   /**
    * 
+   * @member {String} documentDisplay
+   */
+  exports.prototype['documentDisplay'] = undefined;
+  /**
+   * 
    * @member {String} documentHtml
    */
   exports.prototype['documentHtml'] = undefined;
@@ -93,6 +107,16 @@
    * @member {String} fileExtension
    */
   exports.prototype['fileExtension'] = undefined;
+  /**
+   * 
+   * @member {Boolean} mustRead
+   */
+  exports.prototype['mustRead'] = undefined;
+  /**
+   * 
+   * @member {Boolean} mustView
+   */
+  exports.prototype['mustView'] = undefined;
   /**
    * 
    * @member {Number} order

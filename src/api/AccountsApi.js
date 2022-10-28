@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-	define(['Configuration', 'ApiClient', 'model/ClickwrapAgreementsResponse', 'model/ClickwrapRequest', 'model/ClickwrapTransferRequest', 'model/ClickwrapVersionDeleteResponse', 'model/ClickwrapVersionResponse', 'model/ClickwrapVersionSummaryResponse', 'model/ClickwrapVersionsDeleteResponse', 'model/ClickwrapVersionsPagedResponse', 'model/ClickwrapVersionsResponse', 'model/ClickwrapsDeleteResponse', 'model/ErrorDetails', 'model/ServiceInformation', 'model/UserAgreementRequest', 'model/UserAgreementResponse'], factory);
+	define(['Configuration', 'ApiClient', 'model/ClickwrapAgreementsResponse', 'model/ClickwrapRequest', 'model/ClickwrapTransferRequest', 'model/ClickwrapVersionDeleteResponse', 'model/ClickwrapVersionResponse', 'model/ClickwrapVersionSummaryResponse', 'model/ClickwrapVersionsDeleteResponse', 'model/ClickwrapVersionsPagedResponse', 'model/ClickwrapVersionsResponse', 'model/ClickwrapsDeleteResponse', 'model/Document', 'model/ErrorDetails', 'model/ServiceInformation', 'model/UserAgreementRequest', 'model/UserAgreementResponse'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/ClickwrapAgreementsResponse'), require('../model/ClickwrapRequest'), require('../model/ClickwrapTransferRequest'), require('../model/ClickwrapVersionDeleteResponse'), require('../model/ClickwrapVersionResponse'), require('../model/ClickwrapVersionSummaryResponse'), require('../model/ClickwrapVersionsDeleteResponse'), require('../model/ClickwrapVersionsPagedResponse'), require('../model/ClickwrapVersionsResponse'), require('../model/ClickwrapsDeleteResponse'), require('../model/ErrorDetails'), require('../model/ServiceInformation'), require('../model/UserAgreementRequest'), require('../model/UserAgreementResponse'));
+    module.exports = factory(require('../Configuration'), require('../ApiClient'), require('../model/ClickwrapAgreementsResponse'), require('../model/ClickwrapRequest'), require('../model/ClickwrapTransferRequest'), require('../model/ClickwrapVersionDeleteResponse'), require('../model/ClickwrapVersionResponse'), require('../model/ClickwrapVersionSummaryResponse'), require('../model/ClickwrapVersionsDeleteResponse'), require('../model/ClickwrapVersionsPagedResponse'), require('../model/ClickwrapVersionsResponse'), require('../model/ClickwrapsDeleteResponse'), require('../model/Document'), require('../model/ErrorDetails'), require('../model/ServiceInformation'), require('../model/UserAgreementRequest'), require('../model/UserAgreementResponse'));
   } else {
     // Browser globals (root is window)
     if (!root.DocusignClick) {
       root.DocusignClick = {};
     }
-    root.DocusignClick.AccountsApi = factory(root.DocusignClick.Configuration, root.DocusignClick.ApiClient, root.DocusignClick.ClickwrapAgreementsResponse, root.DocusignClick.ClickwrapRequest, root.DocusignClick.ClickwrapTransferRequest, root.DocusignClick.ClickwrapVersionDeleteResponse, root.DocusignClick.ClickwrapVersionResponse, root.DocusignClick.ClickwrapVersionSummaryResponse, root.DocusignClick.ClickwrapVersionsDeleteResponse, root.DocusignClick.ClickwrapVersionsPagedResponse, root.DocusignClick.ClickwrapVersionsResponse, root.DocusignClick.ClickwrapsDeleteResponse, root.DocusignClick.ErrorDetails, root.DocusignClick.ServiceInformation, root.DocusignClick.UserAgreementRequest, root.DocusignClick.UserAgreementResponse);
+    root.DocusignClick.AccountsApi = factory(root.DocusignClick.Configuration, root.DocusignClick.ApiClient, root.DocusignClick.ClickwrapAgreementsResponse, root.DocusignClick.ClickwrapRequest, root.DocusignClick.ClickwrapTransferRequest, root.DocusignClick.ClickwrapVersionDeleteResponse, root.DocusignClick.ClickwrapVersionResponse, root.DocusignClick.ClickwrapVersionSummaryResponse, root.DocusignClick.ClickwrapVersionsDeleteResponse, root.DocusignClick.ClickwrapVersionsPagedResponse, root.DocusignClick.ClickwrapVersionsResponse, root.DocusignClick.ClickwrapsDeleteResponse, root.DocusignClick.Document, root.DocusignClick.ErrorDetails, root.DocusignClick.ServiceInformation, root.DocusignClick.UserAgreementRequest, root.DocusignClick.UserAgreementResponse);
   }
-}(this, function(Configuration, ApiClient, ClickwrapAgreementsResponse, ClickwrapRequest, ClickwrapTransferRequest, ClickwrapVersionDeleteResponse, ClickwrapVersionResponse, ClickwrapVersionSummaryResponse, ClickwrapVersionsDeleteResponse, ClickwrapVersionsPagedResponse, ClickwrapVersionsResponse, ClickwrapsDeleteResponse, ErrorDetails, ServiceInformation, UserAgreementRequest, UserAgreementResponse) {
+}(this, function(Configuration, ApiClient, ClickwrapAgreementsResponse, ClickwrapRequest, ClickwrapTransferRequest, ClickwrapVersionDeleteResponse, ClickwrapVersionResponse, ClickwrapVersionSummaryResponse, ClickwrapVersionsDeleteResponse, ClickwrapVersionsPagedResponse, ClickwrapVersionsResponse, ClickwrapsDeleteResponse, Document, ErrorDetails, ServiceInformation, UserAgreementRequest, UserAgreementResponse) {
   'use strict';
 
   /**
@@ -567,6 +567,78 @@
 
       return this.apiClient.callApi(
         '/v1/accounts/{accountId}/clickwraps/{clickwrapId}/agreements/{agreementId}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    };
+
+    /**
+     * (Optional) Callback function to receive the result of the getAgreementDocument operation. If none specified a Promise will be returned.
+     * @callback module:api/AccountsApi~getAgreementDocumentCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/Document} data The data returned by the service call.
+     * @param {String} If a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.
+     */
+
+    /**
+     * Downloads a document at an order within the agreement.
+     * @param {String} accountId 
+     * @param {String} clickwrapId 
+     * @param {String} versionId 
+     * @param {String} orderOrDisclosure 
+     * @param {module:api/AccountsApi~getAgreementDocumentCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/Document}
+     */
+    this.getAgreementDocument = function(accountId, clickwrapId, versionId, orderOrDisclosure, callback) {
+      var postBody = null;
+
+      // verify the required parameter 'accountId' is set
+      if (accountId === undefined || accountId === null) {
+        throw new Error("Missing the required parameter 'accountId' when calling getAgreementDocument");
+      }
+
+      // verify the required parameter 'clickwrapId' is set
+      if (clickwrapId === undefined || clickwrapId === null) {
+        throw new Error("Missing the required parameter 'clickwrapId' when calling getAgreementDocument");
+      }
+
+      // verify the required parameter 'versionId' is set
+      if (versionId === undefined || versionId === null) {
+        throw new Error("Missing the required parameter 'versionId' when calling getAgreementDocument");
+      }
+
+      // verify the required parameter 'orderOrDisclosure' is set
+      if (orderOrDisclosure === undefined || orderOrDisclosure === null) {
+        throw new Error("Missing the required parameter 'orderOrDisclosure' when calling getAgreementDocument");
+      }
+
+      if (typeof callback !== 'function' &&  arguments.length && typeof arguments[arguments.length-1] === 'function'){
+        if (typeof optsOrCallback !== 'undefined') {
+          optsOrCallback = callback;
+        }
+        callback = arguments[arguments.length-1];
+      }
+
+      var pathParams = {
+        'accountId': accountId,
+        'clickwrapId': clickwrapId,
+        'versionId': versionId,
+        'orderOrDisclosure': orderOrDisclosure
+      };
+      var queryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['docusignAccessCode'];
+      var contentTypes = [];
+      var accepts = ['application/json'];
+      var returnType = Document;
+
+      return this.apiClient.callApi(
+        '/v1/accounts/{accountId}/clickwraps/{clickwrapId}/versions/{versionId}/documents/{orderOrDisclosure}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
