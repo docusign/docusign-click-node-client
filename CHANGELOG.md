@@ -2,6 +2,16 @@
 
 See [DocuSign Support Center](https://support.docusign.com/en/releasenotes/) for Product Release Notes.
 
+## [v2.0.0] - Click API v1-22.3.01.00 - 2023-01-23
+### Breaking 
+- Deprecating Node versions <12
+### Security
+- Update jsonwebtoken package to 9.0.0 addressing CVE-2022-23529
+
+### Changed
+- Added support for version v1-22.3.01.00 of the DocuSign Click API.
+- Updated the SDK release version.
+
 ## [v1.2.2] - Click API v1-22.3.01.00 - 2022-10-27
 ### Changed
 - Added support for version v1-22.3.01.00 of the DocuSign Click API.
