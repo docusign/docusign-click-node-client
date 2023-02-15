@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>ClickwrapVersionsPagedResponse</code>.
+   * The results are paginated. Use the following properties to navigate the pages.  - `page`: The page number of the current results. - `pageSize`: The number of results in the current page. - `minimumPagesRemaining`: The number of pages that follow this one.  
    * @alias module:model/ClickwrapVersionsPagedResponse
    * @class
    */
@@ -80,37 +81,37 @@
   }
 
   /**
-   * 
+   * The external account number (int) or account ID GUID.
    * @member {String} accountId
    */
   exports.prototype['accountId'] = undefined;
   /**
-   * 
+   * The ID of the clickwrap.
    * @member {String} clickwrapId
    */
   exports.prototype['clickwrapId'] = undefined;
   /**
-   * 
+   * The name of the clickwrap.
    * @member {String} clickwrapName
    */
   exports.prototype['clickwrapName'] = undefined;
   /**
-   * 
+   * An array of clickwrap versions.
    * @member {Number} minimumPagesRemaining
    */
   exports.prototype['minimumPagesRemaining'] = undefined;
   /**
-   * 
+   * The number of the current page.
    * @member {Number} page
    */
   exports.prototype['page'] = undefined;
   /**
-   * 
+   * The number of items per page.
    * @member {Number} pageSize
    */
   exports.prototype['pageSize'] = undefined;
   /**
-   * 
+   * An array of clickwrap versions.
    * @member {Array.<module:model/ClickwrapVersion>} versions
    */
   exports.prototype['versions'] = undefined;

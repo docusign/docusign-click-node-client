@@ -68,17 +68,17 @@
   }
 
   /**
-   * 
+   * The ID of the clickwrap.
    * @member {String} clickwrapId
    */
   exports.prototype['clickwrapId'] = undefined;
   /**
-   * 
+   * The name of the clickwrap.
    * @member {String} clickwrapName
    */
   exports.prototype['clickwrapName'] = undefined;
   /**
-   * 
+   * An array of delete responses.
    * @member {Array.<module:model/ClickwrapVersionDeleteResponse>} versions
    */
   exports.prototype['versions'] = undefined;

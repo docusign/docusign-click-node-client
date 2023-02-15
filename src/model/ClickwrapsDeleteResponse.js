@@ -62,7 +62,7 @@
   }
 
   /**
-   * 
+   * An array of clickwrap deletion results.
    * @member {Array.<module:model/ClickwrapDeleteResponse>} clickwraps
    */
   exports.prototype['clickwraps'] = undefined;

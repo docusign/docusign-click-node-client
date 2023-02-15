@@ -77,32 +77,32 @@
   }
 
   /**
-   * 
+   * The internal source control branch.
    * @member {String} buildBranch
    */
   exports.prototype['buildBranch'] = undefined;
   /**
-   * 
+   * The date-time this branch was deployed.
    * @member {String} buildBranchDeployedDateTime
    */
   exports.prototype['buildBranchDeployedDateTime'] = undefined;
   /**
-   * 
+   * The internal source control SHA.
    * @member {String} buildSHA
    */
   exports.prototype['buildSHA'] = undefined;
   /**
-   * 
+   * The internal build version information.
    * @member {String} buildVersion
    */
   exports.prototype['buildVersion'] = undefined;
   /**
-   * 
+   * An array of URLs (strings) of related sites.
    * @member {Array.<String>} linkedSites
    */
   exports.prototype['linkedSites'] = undefined;
   /**
-   * 
+   * An array of `serviceVersion` objects.
    * @member {Array.<module:model/ServiceVersion>} serviceVersions
    */
   exports.prototype['serviceVersions'] = undefined;

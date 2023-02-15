@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>UserAgreementRequest</code>.
+   * Data used to create the agreement.
    * @alias module:model/UserAgreementRequest
    * @class
    */
@@ -63,25 +64,33 @@
       if (data.hasOwnProperty('metadata')) {
         obj['metadata'] = ApiClient.convertToType(data['metadata'], 'String');
       }
+      if (data.hasOwnProperty('returnUrl')) {
+        obj['returnUrl'] = ApiClient.convertToType(data['returnUrl'], 'String');
+      }
     }
     return obj;
   }
 
   /**
-   * 
+   * A unique value that identifies a user. You can use anything that your system uses to identify unique users, such as employee IDs, email addresses, and surrogate keys as the value of `clientUserId`.  A clickwrap with a specific `clientUserId` will not appear again once it has been accepted. 
    * @member {String} clientUserId
    */
   exports.prototype['clientUserId'] = undefined;
   /**
-   * 
+   * This property specifies the data used to create a clickwrap with [dynamic content][].    [dynamic content]: /docs/click-api/click101/customize-clickwrap-fields/#embed-clickwraps-that-contain-dynamic-content 
    * @member {Object.<String, String>} documentData
    */
   exports.prototype['documentData'] = undefined;
   /**
-   * 
+   * A customer-defined string you can use in requests. This string will appear in the corresponding response.
    * @member {String} metadata
    */
   exports.prototype['metadata'] = undefined;
+  /**
+   * The URL to redirect to after the agreement is complete when the agreement is not rendered in an iframe.
+   * @member {String} returnUrl
+   */
+  exports.prototype['returnUrl'] = undefined;
 
 
 

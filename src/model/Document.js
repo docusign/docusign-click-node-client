@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>Document</code>.
+   * Information about a document.
    * @alias module:model/Document
    * @class
    */
@@ -83,42 +84,42 @@
   }
 
   /**
-   * 
+   * The base64-encoded contents of the document.
    * @member {String} documentBase64
    */
   exports.prototype['documentBase64'] = undefined;
   /**
-   * 
+   * Display type: link, document or pdf
    * @member {String} documentDisplay
    */
   exports.prototype['documentDisplay'] = undefined;
   /**
-   * 
+   * The HTML representation of the document.
    * @member {String} documentHtml
    */
   exports.prototype['documentHtml'] = undefined;
   /**
-   * 
+   * The name of the document.
    * @member {String} documentName
    */
   exports.prototype['documentName'] = undefined;
   /**
-   * 
+   * The file extension of the document.
    * @member {String} fileExtension
    */
   exports.prototype['fileExtension'] = undefined;
   /**
-   * 
+   * **True** if the user needs to scroll to the end of the document.
    * @member {Boolean} mustRead
    */
   exports.prototype['mustRead'] = undefined;
   /**
-   * 
+   * **True** if the user must view the document.
    * @member {Boolean} mustView
    */
   exports.prototype['mustView'] = undefined;
   /**
-   * 
+   * The order of document layout.
    * @member {Number} order
    */
   exports.prototype['order'] = undefined;

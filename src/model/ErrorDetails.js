@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>ErrorDetails</code>.
+   * Error details.
    * @alias module:model/ErrorDetails
    * @class
    */
@@ -65,12 +66,12 @@
   }
 
   /**
-   * 
+   * The error code.
    * @member {String} errorCode
    */
   exports.prototype['errorCode'] = undefined;
   /**
-   * 
+   * The error message.
    * @member {String} message
    */
   exports.prototype['message'] = undefined;

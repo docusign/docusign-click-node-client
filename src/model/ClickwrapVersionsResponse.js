@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>ClickwrapVersionsResponse</code>.
+   * The results are paginated. Use the following properties to navigate the pages. Use the `page_number` query parameter to specify a page.  - `page`: The page number of the current results. - `pageSize`: The number of results in the current page. - `minimumPagesRemaining`: The number of pages that follow this one. 
    * @alias module:model/ClickwrapVersionsResponse
    * @class
    */
@@ -71,22 +72,22 @@
   }
 
   /**
-   * 
+   * An array of `clickwrapVersionSummaryResponse` objects.
    * @member {Array.<module:model/ClickwrapVersionSummaryResponse>} clickwraps
    */
   exports.prototype['clickwraps'] = undefined;
   /**
-   * 
+   * Number of pages remaining in the response.
    * @member {Number} minimumPagesRemaining
    */
   exports.prototype['minimumPagesRemaining'] = undefined;
   /**
-   * 
+   * The number of the current page.
    * @member {Number} page
    */
   exports.prototype['page'] = undefined;
   /**
-   * 
+   * The number of items per page.
    * @member {Number} pageSize
    */
   exports.prototype['pageSize'] = undefined;
