@@ -74,27 +74,27 @@
   }
 
   /**
-   * 
+   * User agreements from this datetime.
    * @member {Object} beginCreatedOn
    */
   exports.prototype['beginCreatedOn'] = undefined;
   /**
-   * 
+   * Number of pages remaining in the response.
    * @member {Number} minimumPagesRemaining
    */
   exports.prototype['minimumPagesRemaining'] = undefined;
   /**
-   * 
+   * The number of the current page.
    * @member {Number} page
    */
   exports.prototype['page'] = undefined;
   /**
-   * 
+   * The number of items per page.
    * @member {Number} pageSize
    */
   exports.prototype['pageSize'] = undefined;
   /**
-   * 
+   * An array of user agreements.
    * @member {Array.<module:model/UserAgreementResponse>} userAgreements
    */
   exports.prototype['userAgreements'] = undefined;

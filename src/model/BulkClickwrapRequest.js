@@ -21,20 +21,21 @@
     if (!root.DocusignClick) {
       root.DocusignClick = {};
     }
-    root.DocusignClick.ServiceVersion = factory(root.DocusignClick.ApiClient);
+    root.DocusignClick.BulkClickwrapRequest = factory(root.DocusignClick.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
 
   /**
-   * The ServiceVersion model module.
-   * @module model/ServiceVersion
+   * The BulkClickwrapRequest model module.
+   * @module model/BulkClickwrapRequest
    */
 
   /**
-   * Constructs a new <code>ServiceVersion</code>.
-   * @alias module:model/ServiceVersion
+   * Constructs a new <code>BulkClickwrapRequest</code>.
+   * Data used to start a bulk agreements export.
+   * @alias module:model/BulkClickwrapRequest
    * @class
    */
   var exports = function() {
@@ -44,36 +45,44 @@
   };
 
   /**
-   * Constructs a <code>ServiceVersion</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>BulkClickwrapRequest</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/ServiceVersion} obj Optional instance to populate.
-   * @return {module:model/ServiceVersion} The populated <code>ServiceVersion</code> instance.
+   * @param {module:model/BulkClickwrapRequest} obj Optional instance to populate.
+   * @return {module:model/BulkClickwrapRequest} The populated <code>BulkClickwrapRequest</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('version')) {
-        obj['version'] = ApiClient.convertToType(data['version'], 'String');
+      if (data.hasOwnProperty('fromDate')) {
+        obj['fromDate'] = ApiClient.convertToType(data['fromDate'], Object);
       }
-      if (data.hasOwnProperty('versionUrl')) {
-        obj['versionUrl'] = ApiClient.convertToType(data['versionUrl'], 'String');
+      if (data.hasOwnProperty('status')) {
+        obj['status'] = ApiClient.convertToType(data['status'], 'String');
+      }
+      if (data.hasOwnProperty('toDate')) {
+        obj['toDate'] = ApiClient.convertToType(data['toDate'], Object);
       }
     }
     return obj;
   }
 
   /**
-   * The human-readable semver version string.
-   * @member {String} version
+   * The earliest date to return agreements from.
+   * @member {Object} fromDate
    */
-  exports.prototype['version'] = undefined;
+  exports.prototype['fromDate'] = undefined;
   /**
-   * The URL where this version of the API can be found.
-   * @member {String} versionUrl
+   * User agreement status. One of:  - `agreed` - `declined`
+   * @member {String} status
    */
-  exports.prototype['versionUrl'] = undefined;
+  exports.prototype['status'] = undefined;
+  /**
+   * The latest date to return agreements from.
+   * @member {Object} toDate
+   */
+  exports.prototype['toDate'] = undefined;
 
 
 

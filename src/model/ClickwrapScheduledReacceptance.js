@@ -68,17 +68,17 @@
   }
 
   /**
-   * 
+   * The time between recurrences specified in `recurrenceIntervalType` units.  The minimum and maximum values depend on `recurrenceIntervalType`:  - `days`: 1 - 365 - `weeks`: 1 - 52 - `months`: 1 - 12 - `years`: 1
    * @member {Number} recurrenceInterval
    */
   exports.prototype['recurrenceInterval'] = undefined;
   /**
-   * 
+   * The units of the `recurrenceInterval`. Must be one of:  - `days` - `weeks` - `month` - `years` 
    * @member {String} recurrenceIntervalType
    */
   exports.prototype['recurrenceIntervalType'] = undefined;
   /**
-   * 
+   * The date when the recurrence interval starts.
    * @member {Object} startDateTime
    */
   exports.prototype['startDateTime'] = undefined;

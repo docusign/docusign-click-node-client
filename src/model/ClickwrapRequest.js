@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>ClickwrapRequest</code>.
+   * Request body for working with clickwrap.
    * @alias module:model/ClickwrapRequest
    * @class
    */
@@ -101,70 +102,72 @@
   }
 
   /**
-   * 
+   * The name of the clickwrap. This field is required.
    * @member {String} clickwrapName
    */
   exports.prototype['clickwrapName'] = undefined;
   /**
-   * 
+   * An array of data fields available to be inserted into the documents.
    * @member {Array.<module:model/DataField>} dataFields
    */
   exports.prototype['dataFields'] = undefined;
   /**
+   * Display settings for the clickwrap. This object is required.
    * @member {module:model/DisplaySettings} displaySettings
    */
   exports.prototype['displaySettings'] = undefined;
   /**
-   * 
+   * An array of documents. This object is required.
    * @member {Array.<module:model/Document>} documents
    */
   exports.prototype['documents'] = undefined;
   /**
-   * 
+   * Specifies whether `scheduledReacceptance` and `scheduledDate` should be cleared. May be one of:  - `\"scheduledReacceptance\"` - `\"scheduledDate\"` - `\"scheduledReacceptance,scheduledDate\"` 
    * @member {String} fieldsToNull
    */
   exports.prototype['fieldsToNull'] = undefined;
   /**
-   * 
+   * Not used.
    * @member {Boolean} isMajorVersion
    */
   exports.prototype['isMajorVersion'] = undefined;
   /**
-   * 
+   * When **true,** indicates that the clickwrap is shared with one or more users in the account.
    * @member {Boolean} isShared
    */
   exports.prototype['isShared'] = undefined;
   /**
-   * 
+   * Not used.
    * @member {String} name
    */
   exports.prototype['name'] = undefined;
   /**
-   * 
+   * When **true,** requires signers who have previously agreed to this clickwrap to sign again. The version number is incremented.
    * @member {Boolean} requireReacceptance
    */
   exports.prototype['requireReacceptance'] = undefined;
   /**
-   * 
+   * The time and date when this clickwrap is activated.
    * @member {Object} scheduledDate
    */
   exports.prototype['scheduledDate'] = undefined;
   /**
+   * Specifies the interval between reacceptances in days, weeks, months, or years.
    * @member {module:model/ClickwrapScheduledReacceptance} scheduledReacceptance
    */
   exports.prototype['scheduledReacceptance'] = undefined;
   /**
-   * 
+   * Clickwrap status. This property is read-only. Possible values:  - `active` - `inactive` - `deleted`
    * @member {String} status
    */
   exports.prototype['status'] = undefined;
   /**
-   * 
+   * Not used. To update the user ID of a clickwrap, use the [updateClickwrap](/docs/click-api/reference/accounts/clickwraps/updateclickwrap/) endpoint.
    * @member {String} transferFromUserId
    */
   exports.prototype['transferFromUserId'] = undefined;
   /**
-   * 
+   * Not used. To update the user ID of a clickwrap, use the [updateClickwrap](/docs/click-api/reference/accounts/clickwraps/updateclickwrap/) endpoint.
    * @member {String} transferToUserId
    */
   exports.prototype['transferToUserId'] = undefined;

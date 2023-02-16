@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>ClickwrapDeleteResponse</code>.
+   * The result of a clickwrap deletion request.
    * @alias module:model/ClickwrapDeleteResponse
    * @class
    */
@@ -74,27 +75,27 @@
   }
 
   /**
-   * 
+   * The ID of the clickwrap.
    * @member {String} clickwrapId
    */
   exports.prototype['clickwrapId'] = undefined;
   /**
-   * 
+   * The name of the clickwrap.
    * @member {String} clickwrapName
    */
   exports.prototype['clickwrapName'] = undefined;
   /**
-   * 
+   * A message describing the result of deletion request. One of:  - `alreadyDeleted`: Clickwrap is already deleted. - `deletionSuccess`: Successfully deleted the clickwrap. - `deletionFailure`: Failed to delete the clickwrap. - `cannotDelete`: Active clickwrap version cannot be deleted.
    * @member {String} deletionMessage
    */
   exports.prototype['deletionMessage'] = undefined;
   /**
-   * 
+   * **True** if the clickwrap was deleted successfully. **False** otherwise.
    * @member {Boolean} deletionSuccess
    */
   exports.prototype['deletionSuccess'] = undefined;
   /**
-   * 
+   * Clickwrap status. Possible values:  - `active` - `inactive` - `deleted`
    * @member {String} status
    */
   exports.prototype['status'] = undefined;

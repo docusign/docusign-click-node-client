@@ -104,76 +104,77 @@
   }
 
   /**
-   * 
+   * The external account number (int) or account ID GUID.
    * @member {String} accountId
    */
   exports.prototype['accountId'] = undefined;
   /**
-   * 
+   * The ID of the clickwrap.
    * @member {String} clickwrapId
    */
   exports.prototype['clickwrapId'] = undefined;
   /**
-   * 
+   * The name of the clickwrap.
    * @member {String} clickwrapName
    */
   exports.prototype['clickwrapName'] = undefined;
   /**
-   * 
+   * The unique version ID, a GUID, of this clickwrap version.
    * @member {String} clickwrapVersionId
    */
   exports.prototype['clickwrapVersionId'] = undefined;
   /**
-   * 
+   * The time that the clickwrap was created.
    * @member {Object} createdTime
    */
   exports.prototype['createdTime'] = undefined;
   /**
-   * 
+   * The list of all the data fields available for the clickwrap (custom fields and standard fields).
    * @member {Array.<module:model/DataField>} dataFields
    */
   exports.prototype['dataFields'] = undefined;
   /**
-   * 
+   * The time that the clickwrap was last modified.
    * @member {Object} lastModified
    */
   exports.prototype['lastModified'] = undefined;
   /**
-   * 
+   * The user ID of the last user who modified this clickwrap.
    * @member {String} lastModifiedBy
    */
   exports.prototype['lastModifiedBy'] = undefined;
   /**
-   * 
+   * The user ID of the owner of this clickwrap.
    * @member {String} ownerUserId
    */
   exports.prototype['ownerUserId'] = undefined;
   /**
-   * 
+   * When **true,** requires signers who have previously agreed to this clickwrap to sign again. The version number is incremented.
    * @member {Boolean} requireReacceptance
    */
   exports.prototype['requireReacceptance'] = undefined;
   /**
-   * 
+   * The time and date when this clickwrap is activated.
    * @member {Object} scheduledDate
    */
   exports.prototype['scheduledDate'] = undefined;
   /**
+   * Specifies the interval between reacceptances in days, weeks, months, or years.
    * @member {module:model/ClickwrapScheduledReacceptance} scheduledReacceptance
    */
   exports.prototype['scheduledReacceptance'] = undefined;
   /**
-   * 
+   * Clickwrap status. Possible values:  - `active` - `inactive` - `deleted`
    * @member {String} status
    */
   exports.prototype['status'] = undefined;
   /**
-   * 
+   * The ID of the version.
    * @member {String} versionId
    */
   exports.prototype['versionId'] = undefined;
   /**
-   * 
+   * Version of the clickwrap.
    * @member {String} versionNumber
    */
   exports.prototype['versionNumber'] = undefined;

@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>DisplaySettings</code>.
+   * Information about how an agreement is displayed.
    * @alias module:model/DisplaySettings
    * @class
    */
@@ -113,92 +114,92 @@
   }
 
   /**
-   * 
+   * Position of the Accept button in the agreement. One of   - `right` - `left` 
    * @member {String} actionButtonAlignment
    */
   exports.prototype['actionButtonAlignment'] = undefined;
   /**
-   * 
+   * When **true,** this agreement can be be used in client-only integrations.
    * @member {Boolean} allowClientOnly
    */
   exports.prototype['allowClientOnly'] = undefined;
   /**
-   * 
+   * Hosts that can host the clickwrap.  It is an error if the clickwrap didn't come from one of these hosts. 
    * @member {Array.<String>} allowedHosts
    */
   exports.prototype['allowedHosts'] = undefined;
   /**
-   * 
+   * The signing brand ID.
    * @member {String} brandId
    */
   exports.prototype['brandId'] = undefined;
   /**
-   * 
+   * Text on the agree button.
    * @member {String} consentButtonText
    */
   exports.prototype['consentButtonText'] = undefined;
   /**
-   * 
+   * The statement prefixing the Electronic Record and Signature Disclosure agreement.
    * @member {String} consentText
    */
   exports.prototype['consentText'] = undefined;
   /**
-   * 
+   * The text on the decline button.
    * @member {String} declineButtonText
    */
   exports.prototype['declineButtonText'] = undefined;
   /**
-   * 
+   * The display name of the user agreement.
    * @member {String} displayName
    */
   exports.prototype['displayName'] = undefined;
   /**
-   * 
+   * Display type: link, document or pdf
    * @member {String} documentDisplay
    */
   exports.prototype['documentDisplay'] = undefined;
   /**
-   * 
+   * **True** if the agreement is downloadable.
    * @member {Boolean} downloadable
    */
   exports.prototype['downloadable'] = undefined;
   /**
-   * 
+   * Display format: inline or modal.
    * @member {String} format
    */
   exports.prototype['format'] = undefined;
   /**
-   * 
+   * **True** if the agreement has a decline button.
    * @member {Boolean} hasDeclineButton
    */
   exports.prototype['hasDeclineButton'] = undefined;
   /**
-   * 
+   * **True** if the user needs to scroll to the end of the document.
    * @member {Boolean} mustRead
    */
   exports.prototype['mustRead'] = undefined;
   /**
-   * 
+   * **True** if the user must view the document.
    * @member {Boolean} mustView
    */
   exports.prototype['mustView'] = undefined;
   /**
-   * 
+   * When **true,** this agreement records decline actions.
    * @member {Boolean} recordDeclineResponses
    */
   exports.prototype['recordDeclineResponses'] = undefined;
   /**
-   * 
+   * **True** if a checkbox is required to accept.
    * @member {Boolean} requireAccept
    */
   exports.prototype['requireAccept'] = undefined;
   /**
-   * 
+   * **True** if send to email is applicable.
    * @member {Boolean} sendToEmail
    */
   exports.prototype['sendToEmail'] = undefined;
   /**
-   * 
+   * Position of the agreement statement. One of   - `top` - `bottom` 
    * @member {String} statementAlignment
    */
   exports.prototype['statementAlignment'] = undefined;

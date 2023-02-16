@@ -34,6 +34,7 @@
 
   /**
    * Constructs a new <code>ClickwrapTransferRequest</code>.
+   * Data used to transfer a clickwrap from one user to another.
    * @alias module:model/ClickwrapTransferRequest
    * @class
    */
@@ -65,12 +66,12 @@
   }
 
   /**
-   * 
+   * ID of the user to transfer from. This property is required.
    * @member {String} transferFromUserId
    */
   exports.prototype['transferFromUserId'] = undefined;
   /**
-   * 
+   * ID of the user to transfer to. This property is required.
    * @member {String} transferToUserId
    */
   exports.prototype['transferToUserId'] = undefined;
