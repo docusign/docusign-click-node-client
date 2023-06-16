@@ -11,12 +11,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['Configuration', 'ApiClient', 'model/BulkClickwrapRequest', 'model/ClickwrapAgreementsResponse', 'model/ClickwrapDeleteResponse', 'model/ClickwrapRequest', 'model/ClickwrapScheduledReacceptance', 'model/ClickwrapTransferRequest', 'model/ClickwrapVersion', 'model/ClickwrapVersionDeleteResponse', 'model/ClickwrapVersionResponse', 'model/ClickwrapVersionSummaryResponse', 'model/ClickwrapVersionsDeleteResponse', 'model/ClickwrapVersionsPagedResponse', 'model/ClickwrapVersionsResponse', 'model/ClickwrapsDeleteResponse', 'model/DataField', 'model/DisplaySettings', 'model/Document', 'model/ErrorDetails', 'model/ServiceInformation', 'model/ServiceVersion', 'model/UserAgreementRequest', 'model/UserAgreementResponse', 'api/AccountsApi'], factory);
+    define(['Configuration', 'ApiClient', 'model/AgreeButtonStyles', 'model/AgreementStatementStyles', 'model/BaseAgreeButtonStyles', 'model/BulkClickwrapRequest', 'model/ClickwrapAgreementsResponse', 'model/ClickwrapDeleteResponse', 'model/ClickwrapRequest', 'model/ClickwrapScheduledReacceptance', 'model/ClickwrapTransferRequest', 'model/ClickwrapVersion', 'model/ClickwrapVersionDeleteResponse', 'model/ClickwrapVersionResponse', 'model/ClickwrapVersionSummaryResponse', 'model/ClickwrapVersionsDeleteResponse', 'model/ClickwrapVersionsPagedResponse', 'model/ClickwrapVersionsResponse', 'model/ClickwrapsDeleteResponse', 'model/ContainerStyles', 'model/DataField', 'model/DisclosureLinkStyles', 'model/DisplaySettings', 'model/Document', 'model/DocumentLinkStyles', 'model/DocumentLinkStylesFocus', 'model/ErrorDetails', 'model/HeaderStyles', 'model/ServiceInformation', 'model/ServiceVersion', 'model/UserAgreementRequest', 'model/UserAgreementResponse', 'model/UserAgreementResponseStyle', 'api/AccountsApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./Configuration'), require('./ApiClient'), require('./model/BulkClickwrapRequest'), require('./model/ClickwrapAgreementsResponse'), require('./model/ClickwrapDeleteResponse'), require('./model/ClickwrapRequest'), require('./model/ClickwrapScheduledReacceptance'), require('./model/ClickwrapTransferRequest'), require('./model/ClickwrapVersion'), require('./model/ClickwrapVersionDeleteResponse'), require('./model/ClickwrapVersionResponse'), require('./model/ClickwrapVersionSummaryResponse'), require('./model/ClickwrapVersionsDeleteResponse'), require('./model/ClickwrapVersionsPagedResponse'), require('./model/ClickwrapVersionsResponse'), require('./model/ClickwrapsDeleteResponse'), require('./model/DataField'), require('./model/DisplaySettings'), require('./model/Document'), require('./model/ErrorDetails'), require('./model/ServiceInformation'), require('./model/ServiceVersion'), require('./model/UserAgreementRequest'), require('./model/UserAgreementResponse'), require('./api/AccountsApi'));
+    module.exports = factory(require('./Configuration'), require('./ApiClient'), require('./model/AgreeButtonStyles'), require('./model/AgreementStatementStyles'), require('./model/BaseAgreeButtonStyles'), require('./model/BulkClickwrapRequest'), require('./model/ClickwrapAgreementsResponse'), require('./model/ClickwrapDeleteResponse'), require('./model/ClickwrapRequest'), require('./model/ClickwrapScheduledReacceptance'), require('./model/ClickwrapTransferRequest'), require('./model/ClickwrapVersion'), require('./model/ClickwrapVersionDeleteResponse'), require('./model/ClickwrapVersionResponse'), require('./model/ClickwrapVersionSummaryResponse'), require('./model/ClickwrapVersionsDeleteResponse'), require('./model/ClickwrapVersionsPagedResponse'), require('./model/ClickwrapVersionsResponse'), require('./model/ClickwrapsDeleteResponse'), require('./model/ContainerStyles'), require('./model/DataField'), require('./model/DisclosureLinkStyles'), require('./model/DisplaySettings'), require('./model/Document'), require('./model/DocumentLinkStyles'), require('./model/DocumentLinkStylesFocus'), require('./model/ErrorDetails'), require('./model/HeaderStyles'), require('./model/ServiceInformation'), require('./model/ServiceVersion'), require('./model/UserAgreementRequest'), require('./model/UserAgreementResponse'), require('./model/UserAgreementResponseStyle'), require('./api/AccountsApi'));
   }
-}(function(Configuration, ApiClient, BulkClickwrapRequest, ClickwrapAgreementsResponse, ClickwrapDeleteResponse, ClickwrapRequest, ClickwrapScheduledReacceptance, ClickwrapTransferRequest, ClickwrapVersion, ClickwrapVersionDeleteResponse, ClickwrapVersionResponse, ClickwrapVersionSummaryResponse, ClickwrapVersionsDeleteResponse, ClickwrapVersionsPagedResponse, ClickwrapVersionsResponse, ClickwrapsDeleteResponse, DataField, DisplaySettings, Document, ErrorDetails, ServiceInformation, ServiceVersion, UserAgreementRequest, UserAgreementResponse, AccountsApi) {
+}(function(Configuration, ApiClient, AgreeButtonStyles, AgreementStatementStyles, BaseAgreeButtonStyles, BulkClickwrapRequest, ClickwrapAgreementsResponse, ClickwrapDeleteResponse, ClickwrapRequest, ClickwrapScheduledReacceptance, ClickwrapTransferRequest, ClickwrapVersion, ClickwrapVersionDeleteResponse, ClickwrapVersionResponse, ClickwrapVersionSummaryResponse, ClickwrapVersionsDeleteResponse, ClickwrapVersionsPagedResponse, ClickwrapVersionsResponse, ClickwrapsDeleteResponse, ContainerStyles, DataField, DisclosureLinkStyles, DisplaySettings, Document, DocumentLinkStyles, DocumentLinkStylesFocus, ErrorDetails, HeaderStyles, ServiceInformation, ServiceVersion, UserAgreementRequest, UserAgreementResponse, UserAgreementResponseStyle, AccountsApi) {
   'use strict';
 
   /**
@@ -60,6 +60,21 @@
      * @property {module:ApiClient}
      */
     ApiClient: ApiClient,
+    /**
+     * The AgreeButtonStyles model constructor.
+     * @property {module:model/AgreeButtonStyles}
+     */
+    AgreeButtonStyles: AgreeButtonStyles,
+    /**
+     * The AgreementStatementStyles model constructor.
+     * @property {module:model/AgreementStatementStyles}
+     */
+    AgreementStatementStyles: AgreementStatementStyles,
+    /**
+     * The BaseAgreeButtonStyles model constructor.
+     * @property {module:model/BaseAgreeButtonStyles}
+     */
+    BaseAgreeButtonStyles: BaseAgreeButtonStyles,
     /**
      * The BulkClickwrapRequest model constructor.
      * @property {module:model/BulkClickwrapRequest}
@@ -131,10 +146,20 @@
      */
     ClickwrapsDeleteResponse: ClickwrapsDeleteResponse,
     /**
+     * The ContainerStyles model constructor.
+     * @property {module:model/ContainerStyles}
+     */
+    ContainerStyles: ContainerStyles,
+    /**
      * The DataField model constructor.
      * @property {module:model/DataField}
      */
     DataField: DataField,
+    /**
+     * The DisclosureLinkStyles model constructor.
+     * @property {module:model/DisclosureLinkStyles}
+     */
+    DisclosureLinkStyles: DisclosureLinkStyles,
     /**
      * The DisplaySettings model constructor.
      * @property {module:model/DisplaySettings}
@@ -146,10 +171,25 @@
      */
     Document: Document,
     /**
+     * The DocumentLinkStyles model constructor.
+     * @property {module:model/DocumentLinkStyles}
+     */
+    DocumentLinkStyles: DocumentLinkStyles,
+    /**
+     * The DocumentLinkStylesFocus model constructor.
+     * @property {module:model/DocumentLinkStylesFocus}
+     */
+    DocumentLinkStylesFocus: DocumentLinkStylesFocus,
+    /**
      * The ErrorDetails model constructor.
      * @property {module:model/ErrorDetails}
      */
     ErrorDetails: ErrorDetails,
+    /**
+     * The HeaderStyles model constructor.
+     * @property {module:model/HeaderStyles}
+     */
+    HeaderStyles: HeaderStyles,
     /**
      * The ServiceInformation model constructor.
      * @property {module:model/ServiceInformation}
@@ -170,6 +210,11 @@
      * @property {module:model/UserAgreementResponse}
      */
     UserAgreementResponse: UserAgreementResponse,
+    /**
+     * The UserAgreementResponseStyle model constructor.
+     * @property {module:model/UserAgreementResponseStyle}
+     */
+    UserAgreementResponseStyle: UserAgreementResponseStyle,
     /**
      * The AccountsApi service constructor.
      * @property {module:api/AccountsApi}

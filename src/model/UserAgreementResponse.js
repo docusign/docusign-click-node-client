@@ -12,18 +12,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'model/DataField', 'model/DisplaySettings', 'model/Document'], factory);
+    define(['ApiClient', 'model/DataField', 'model/DisplaySettings', 'model/Document', 'model/UserAgreementResponseStyle'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./DataField'), require('./DisplaySettings'), require('./Document'));
+    module.exports = factory(require('../ApiClient'), require('./DataField'), require('./DisplaySettings'), require('./Document'), require('./UserAgreementResponseStyle'));
   } else {
     // Browser globals (root is window)
     if (!root.DocusignClick) {
       root.DocusignClick = {};
     }
-    root.DocusignClick.UserAgreementResponse = factory(root.DocusignClick.ApiClient, root.DocusignClick.DataField, root.DocusignClick.DisplaySettings, root.DocusignClick.Document);
+    root.DocusignClick.UserAgreementResponse = factory(root.DocusignClick.ApiClient, root.DocusignClick.DataField, root.DocusignClick.DisplaySettings, root.DocusignClick.Document, root.DocusignClick.UserAgreementResponseStyle);
   }
-}(this, function(ApiClient, DataField, DisplaySettings, Document) {
+}(this, function(ApiClient, DataField, DisplaySettings, Document, UserAgreementResponseStyle) {
   'use strict';
 
 
@@ -106,7 +106,7 @@
         obj['status'] = ApiClient.convertToType(data['status'], 'String');
       }
       if (data.hasOwnProperty('style')) {
-        obj['style'] = ApiClient.convertToType(data['style'], {'String': 'String'});
+        obj['style'] = UserAgreementResponseStyle.constructFromObject(data['style']);
       }
       if (data.hasOwnProperty('version')) {
         obj['version'] = ApiClient.convertToType(data['version'], 'String');
@@ -207,8 +207,7 @@
    */
   exports.prototype['status'] = undefined;
   /**
-   * This property specifies the custom style provided when the agreement was created by [customizing the template appearance][].    [customizing the template appearance]: /docs/click-api/click101/customize-elastic-template-appearance/ 
-   * @member {Object.<String, String>} style
+   * @member {module:model/UserAgreementResponseStyle} style
    */
   exports.prototype['style'] = undefined;
   /**
