@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>auth/strategy.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DocusignAPIError.html">DocusignAPIError</a></li><li><a href="DocusignAuthorizationError.html">DocusignAuthorizationError</a></li><li><a href="DocusignTokenError.html">DocusignTokenError</a></li><li><a href="module-api_AccountsApi.html">api/AccountsApi</a><ul class='methods'><li data-type='method'><a href="module-api_AccountsApi.html#createBulkClickwrapAgreements">createBulkClickwrapAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createClickwrap">createClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createClickwrapVersion">createClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createHasAgreed">createHasAgreed</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrap">deleteClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwraps">deleteClickwraps</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrapVersion">deleteClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrapVersions">deleteClickwrapVersions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreement">getAgreement</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreementDocument">getAgreementDocument</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreementPdf">getAgreementPdf</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrap">getClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapAgreements">getClickwrapAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwraps">getClickwraps</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersion">getClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersionAgreements">getClickwrapVersionAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersions">getClickwrapVersions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getServiceInformation">getServiceInformation</a></li><li data-type='method'><a href="module-api_AccountsApi.html#updateClickwrap">updateClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#updateClickwrapVersion">updateClickwrapVersion</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-model_AgreeButtonStyles.html">model/AgreeButtonStyles</a><ul class='methods'><li data-type='method'><a href="module-model_AgreeButtonStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AgreementStatementStyles.html">model/AgreementStatementStyles</a><ul class='methods'><li data-type='method'><a href="module-model_AgreementStatementStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_BaseAgreeButtonStyles.html">model/BaseAgreeButtonStyles</a><ul class='methods'><li data-type='method'><a href="module-model_BaseAgreeButtonStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_BulkClickwrapRequest.html">model/BulkClickwrapRequest</a><ul class='methods'><li data-type='method'><a href="module-model_BulkClickwrapRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapAgreementsResponse.html">model/ClickwrapAgreementsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapAgreementsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapDeleteResponse.html">model/ClickwrapDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapRequest.html">model/ClickwrapRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapScheduledReacceptance.html">model/ClickwrapScheduledReacceptance</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapScheduledReacceptance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapsDeleteResponse.html">model/ClickwrapsDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapsDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapTransferRequest.html">model/ClickwrapTransferRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapTransferRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersion.html">model/ClickwrapVersion</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersion.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionDeleteResponse.html">model/ClickwrapVersionDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionResponse.html">model/ClickwrapVersionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsDeleteResponse.html">model/ClickwrapVersionsDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsPagedResponse.html">model/ClickwrapVersionsPagedResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsPagedResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsResponse.html">model/ClickwrapVersionsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionSummaryResponse.html">model/ClickwrapVersionSummaryResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionSummaryResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ContainerStyles.html">model/ContainerStyles</a><ul class='methods'><li data-type='method'><a href="module-model_ContainerStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ConversionDocument.html">model/ConversionDocument</a><ul class='methods'><li data-type='method'><a href="module-model_ConversionDocument.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DataField.html">model/DataField</a><ul class='methods'><li data-type='method'><a href="module-model_DataField.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DisclosureLinkStyles.html">model/DisclosureLinkStyles</a><ul class='methods'><li data-type='method'><a href="module-model_DisclosureLinkStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DisplaySettings.html">model/DisplaySettings</a><ul class='methods'><li data-type='method'><a href="module-model_DisplaySettings.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Document.html">model/Document</a><ul class='methods'><li data-type='method'><a href="module-model_Document.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentConversionRequest.html">model/DocumentConversionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentConversionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentConversionResponse.html">model/DocumentConversionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentConversionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentData.html">model/DocumentData</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentData.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentLinkStyles.html">model/DocumentLinkStyles</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentLinkStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentLinkStylesFocus.html">model/DocumentLinkStylesFocus</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentLinkStylesFocus.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorDetails.html">model/ErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_HeaderStyles.html">model/HeaderStyles</a><ul class='methods'><li data-type='method'><a href="module-model_HeaderStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_HtmlResult.html">model/HtmlResult</a><ul class='methods'><li data-type='method'><a href="module-model_HtmlResult.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecipientCopyRequest.html">model/RecipientCopyRequest</a><ul class='methods'><li data-type='method'><a href="module-model_RecipientCopyRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ServiceInformation.html">model/ServiceInformation</a><ul class='methods'><li data-type='method'><a href="module-model_ServiceInformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ServiceVersion.html">model/ServiceVersion</a><ul class='methods'><li data-type='method'><a href="module-model_ServiceVersion.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateAgreementRequest.html">model/UpdateAgreementRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateAgreementRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementRequest.html">model/UserAgreementRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementResponse.html">model/UserAgreementResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementResponseStyle.html">model/UserAgreementResponseStyle</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementResponseStyle.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="Strategy.html">Strategy</a><ul class='methods'><li data-type='method'><a href="Strategy.html#_convertProfileFields">_convertProfileFields</a></li><li data-type='method'><a href="Strategy.html#authenticate">authenticate</a></li><li data-type='method'><a href="Strategy.html#authorizationParams">authorizationParams</a></li><li data-type='method'><a href="Strategy.html#parseErrorResponse">parseErrorResponse</a></li><li data-type='method'><a href="Strategy.html#userProfile">userProfile</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api_AccountsApi.html">api/AccountsApi</a><ul class='methods'><li data-type='method'><a href="module-api_AccountsApi.html#createBulkClickwrapAgreements">createBulkClickwrapAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createClickwrap">createClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createClickwrapVersion">createClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createHasAgreed">createHasAgreed</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrap">deleteClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwraps">deleteClickwraps</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrapVersion">deleteClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrapVersions">deleteClickwrapVersions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreement">getAgreement</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreementDocument">getAgreementDocument</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreementPdf">getAgreementPdf</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrap">getClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapAgreements">getClickwrapAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwraps">getClickwraps</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersion">getClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersionAgreements">getClickwrapVersionAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersions">getClickwrapVersions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getServiceInformation">getServiceInformation</a></li><li data-type='method'><a href="module-api_AccountsApi.html#updateClickwrap">updateClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#updateClickwrapVersion">updateClickwrapVersion</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-index.html">index</a></li><li><a href="module-model_AgreeButtonStyles.html">model/AgreeButtonStyles</a><ul class='methods'><li data-type='method'><a href="module-model_AgreeButtonStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AgreementStatementStyles.html">model/AgreementStatementStyles</a><ul class='methods'><li data-type='method'><a href="module-model_AgreementStatementStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_BaseAgreeButtonStyles.html">model/BaseAgreeButtonStyles</a><ul class='methods'><li data-type='method'><a href="module-model_BaseAgreeButtonStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_BulkClickwrapRequest.html">model/BulkClickwrapRequest</a><ul class='methods'><li data-type='method'><a href="module-model_BulkClickwrapRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapAgreementsResponse.html">model/ClickwrapAgreementsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapAgreementsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapDeleteResponse.html">model/ClickwrapDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapRequest.html">model/ClickwrapRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapScheduledReacceptance.html">model/ClickwrapScheduledReacceptance</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapScheduledReacceptance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapsDeleteResponse.html">model/ClickwrapsDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapsDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapTransferRequest.html">model/ClickwrapTransferRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapTransferRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersion.html">model/ClickwrapVersion</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersion.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionDeleteResponse.html">model/ClickwrapVersionDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionResponse.html">model/ClickwrapVersionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsDeleteResponse.html">model/ClickwrapVersionsDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsPagedResponse.html">model/ClickwrapVersionsPagedResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsPagedResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsResponse.html">model/ClickwrapVersionsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionSummaryResponse.html">model/ClickwrapVersionSummaryResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionSummaryResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ContainerStyles.html">model/ContainerStyles</a><ul class='methods'><li data-type='method'><a href="module-model_ContainerStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ConversionDocument.html">model/ConversionDocument</a><ul class='methods'><li data-type='method'><a href="module-model_ConversionDocument.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DataField.html">model/DataField</a><ul class='methods'><li data-type='method'><a href="module-model_DataField.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DisclosureLinkStyles.html">model/DisclosureLinkStyles</a><ul class='methods'><li data-type='method'><a href="module-model_DisclosureLinkStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DisplaySettings.html">model/DisplaySettings</a><ul class='methods'><li data-type='method'><a href="module-model_DisplaySettings.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Document.html">model/Document</a><ul class='methods'><li data-type='method'><a href="module-model_Document.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentConversionRequest.html">model/DocumentConversionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentConversionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentConversionResponse.html">model/DocumentConversionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentConversionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentData.html">model/DocumentData</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentData.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentLinkStyles.html">model/DocumentLinkStyles</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentLinkStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentLinkStylesFocus.html">model/DocumentLinkStylesFocus</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentLinkStylesFocus.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorDetails.html">model/ErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_HeaderStyles.html">model/HeaderStyles</a><ul class='methods'><li data-type='method'><a href="module-model_HeaderStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_HtmlResult.html">model/HtmlResult</a><ul class='methods'><li data-type='method'><a href="module-model_HtmlResult.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecipientCopyRequest.html">model/RecipientCopyRequest</a><ul class='methods'><li data-type='method'><a href="module-model_RecipientCopyRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ServiceInformation.html">model/ServiceInformation</a><ul class='methods'><li data-type='method'><a href="module-model_ServiceInformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ServiceVersion.html">model/ServiceVersion</a><ul class='methods'><li data-type='method'><a href="module-model_ServiceVersion.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateAgreementRequest.html">model/UpdateAgreementRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateAgreementRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementRequest.html">model/UserAgreementRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementResponse.html">model/UserAgreementResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementResponseStyle.html">model/UserAgreementResponseStyle</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementResponseStyle.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Account.html">oauth/Account</a></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#parse">parse</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">auth/strategy.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>// Load modules.
+var OAuth2Strategy = require('passport-oauth2')
+  , util = require('util')
+  , uri = require('url')
+  , crypto = require('crypto')
+  , Profile = require('./profile')
+  , InternalOAuthError = require('passport-oauth2').InternalOAuthError
+  , docusignAuthorizationError = require('./errors/docusignauthorizationerror')
+  , docusignTokenError = require('./errors/docusigntokenerror')
+  , docusignAPIError = require('./errors/docusignapierror');
+
+
+/**
+ * `Strategy` constructor.
+ *
+ * The docusign authentication strategy authenticates requests by delegating to
+ * docusign using the OAuth 2.0 protocol.
+ *
+ * Applications must supply a `verify` callback which accepts an `accessToken`,
+ * `refreshToken` and service-specific `profile`, and then calls the `cb`
+ * callback supplying a `user`, which should be set to `false` if the
+ * credentials are not valid.  If an exception occured, `err` should be set.
+ *
+ * Options:
+ *   - `clientID`      your docusign application's App ID
+ *   - `clientSecret`  your docusign application's App Secret
+ *   - `callbackURL`   URL to which docusign will redirect the user after granting authorization
+ *
+ * Examples:
+ *
+ *     passport.use(new docusignStrategy({
+ *         clientID: 'YOUR-123-456-789',
+ *         clientSecret: 'shhh-its-a-secret'
+ *         callbackURL: 'https://www.example.net/auth/docusign/callback'
+ *       },
+ *       function(accessToken, refreshToken, profile, cb) {
+ *         User.findOrCreate(..., function (err, user) {
+ *           cb(err, user);
+ *         });
+ *       }
+ *     ));
+ *
+ * @constructor
+ * @param {object} options
+ * @param {function} verify
+ * @access public
+ */
+function Strategy(options, verify) {
+  options = options || {};
+  this._baseURL = options.sandbox ? 'https://account-d.docusign.com/oauth' : 'https://account.docusign.com/oauth';
+  options.authorizationURL = options.authorizationURL || this._baseURL + '/auth';
+  options.tokenURL = options.tokenURL || this._baseURL + '/token';
+  options.scopeSeparator = options.scopeSeparator || ',';
+
+  OAuth2Strategy.call(this, options, verify);
+  this.name = 'docusign';
+  this._profileURL = options.profileURL || this._baseURL + '/userinfo';
+  this._profileFields = options.profileFields || null;
+  this._clientSecret = options.clientSecret;
+}
+
+// Inherit from `OAuth2Strategy`.
+util.inherits(Strategy, OAuth2Strategy);
+
+
+/**
+ * Authenticate request by delegating to docusign using OAuth 2.0.
+ *
+ * @param {http.IncomingMessage} req
+ * @param {object} options
+ * @access protected
+ */
+Strategy.prototype.authenticate = function (req, options) {
+  //   FIX: https://github.com/jaredhanson/passport-oauth/issues/16
+  if (req.query &amp;&amp; req.query.error_code &amp;&amp; !req.query.error) {
+    return this.error(new docusignAuthorizationError(req.query.error_message, parseInt(req.query.error_code, 10)));
+  }
+
+  OAuth2Strategy.prototype.authenticate.call(this, req, options);
+};
+
+/**
+ * Return extra docusign-specific parameters to be included in the authorization
+ * request. Not supported yet!!!
+ *
+ * Options:
+ *  - `display`  Display mode to render dialog, { `page`, `popup`, `touch` }.
+ *
+ * @param {object} options
+ * @return {object}
+ * @access protected
+ */
+Strategy.prototype.authorizationParams = function (options) {
+  var params = {};
+
+  if (options.display) {
+    params.display = options.display;
+  }
+
+  if (options.authType) {
+    params.auth_type = options.authType;
+  }
+  if (options.authNonce) {
+    params.auth_nonce = options.authNonce;
+  }
+
+  return params;
+};
+
+/**
+ * Retrieve user profile from docusign.
+ *
+ * This function constructs a normalized profile, with the following properties:
+ *
+ *   - `provider`         always set to `docusign`
+ *   - `sub`              the user's docusign sub ID
+ *   - `name`             the user's full name
+ *   - `given_name`       the user's first name
+ *   - `family_name`      the user's last name
+ *   - `accounts`         an array containing all the DocuSign's accounts linked to the user
+ *   - `email`            the contact email address granted by the user
+ *
+ * @param {string} accessToken
+ * @param {function} done
+ * @access protected
+ */
+Strategy.prototype.userProfile = function (accessToken, done) {
+  var url = uri.parse(this._profileURL);
+  if (this._profileFields) {
+    //var fields = this._convertProfileFields(this._profileFields);
+    var fields = this._profileFields;
+    if (fields !== '') {
+      url.search = (url.search ? url.search + '&amp;' : '') + 'fields=' + fields;
+    }
+  }
+  url = uri.format(url);
+
+  this._oauth2.useAuthorizationHeaderforGET(true);
+  this._oauth2.get(url, accessToken, function (err, body, res) {
+    var json;
+
+    if (!body &amp;&amp; err) {
+      if (err.data) {
+        try {
+          json = JSON.parse(err.data);
+        } catch (_) {
+        }
+      }
+
+      if (json &amp;&amp; json.error &amp;&amp; typeof json.error == 'object') {
+        return done(new docusignAPIError(json.error.message, json.error.type, json.error.code, json.error.error_subcode, json.error.fbtrace_id));
+      }
+      return done(new InternalOAuthError('Failed to fetch user profile', err));
+    }
+
+    try {
+      json = JSON.parse(body);
+    } catch (ex) {
+      return done(new Error('Failed to parse user profile'));
+    }
+
+    var profile = Profile.parse(json);
+    profile.provider = 'docusign';
+    profile._raw = body;
+    profile._json = json;
+
+    done(null, profile);
+  });
+};
+
+/**
+ * Parse error response from docusign OAuth 2.0 token endpoint.
+ *
+ * @param {string} body
+ * @param {number} status
+ * @return {Error}
+ * @access protected
+ */
+Strategy.prototype.parseErrorResponse = function (body, status) {
+  var json = JSON.parse(body);
+  if (json.error &amp;&amp; typeof json.error == 'object') {
+    return new docusignTokenError(json.error.message, json.error.type, json.error.code, json.error.error_subcode, json.error.fbtrace_id);
+  }
+  return OAuth2Strategy.prototype.parseErrorResponse.call(this, body, status);
+};
+
+/**
+ * Convert docusign profile to a normalized profile.
+ *
+ * @param {object} profileFields
+ * @return {string}
+ * @access protected
+ */
+Strategy.prototype._convertProfileFields = function (profileFields) {
+  var map = {
+    'sub': 'sub',
+    'name': 'name',
+    'given_name': 'given_name',
+    'family_name': 'family_name',
+    'email': 'email',
+    'accounts': 'accounts'
+  };
+
+  var fields = [];
+
+  profileFields.forEach(function (f) {
+    // return raw docusign profile field to support the many fields that don't
+    // map cleanly to Portable Contacts
+    if (typeof map[f] === 'undefined') {
+      return fields.push(f);
+    }
+    ;
+
+    if (Array.isArray(map[f])) {
+      Array.prototype.push.apply(fields, map[f]);
+    } else {
+      fields.push(map[f]);
+    }
+  });
+
+  return fields.join(',');
+};
+
+
+// Expose constructor.
+module.exports = Strategy;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Fri Jun 16 2023 14:58:41 GMT-0700 (Pacific Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

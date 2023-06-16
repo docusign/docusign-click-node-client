@@ -1,0 +1,8864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>module:api/AccountsApi - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="DocusignAPIError.html">DocusignAPIError</a></li><li><a href="DocusignAuthorizationError.html">DocusignAuthorizationError</a></li><li><a href="DocusignTokenError.html">DocusignTokenError</a></li><li><a href="module-api_AccountsApi.html">api/AccountsApi</a><ul class='methods'><li data-type='method'><a href="module-api_AccountsApi.html#createBulkClickwrapAgreements">createBulkClickwrapAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createClickwrap">createClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createClickwrapVersion">createClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createHasAgreed">createHasAgreed</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrap">deleteClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwraps">deleteClickwraps</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrapVersion">deleteClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrapVersions">deleteClickwrapVersions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreement">getAgreement</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreementDocument">getAgreementDocument</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreementPdf">getAgreementPdf</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrap">getClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapAgreements">getClickwrapAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwraps">getClickwraps</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersion">getClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersionAgreements">getClickwrapVersionAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersions">getClickwrapVersions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getServiceInformation">getServiceInformation</a></li><li data-type='method'><a href="module-api_AccountsApi.html#updateClickwrap">updateClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#updateClickwrapVersion">updateClickwrapVersion</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-model_AgreeButtonStyles.html">model/AgreeButtonStyles</a><ul class='methods'><li data-type='method'><a href="module-model_AgreeButtonStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AgreementStatementStyles.html">model/AgreementStatementStyles</a><ul class='methods'><li data-type='method'><a href="module-model_AgreementStatementStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_BaseAgreeButtonStyles.html">model/BaseAgreeButtonStyles</a><ul class='methods'><li data-type='method'><a href="module-model_BaseAgreeButtonStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_BulkClickwrapRequest.html">model/BulkClickwrapRequest</a><ul class='methods'><li data-type='method'><a href="module-model_BulkClickwrapRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapAgreementsResponse.html">model/ClickwrapAgreementsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapAgreementsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapDeleteResponse.html">model/ClickwrapDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapRequest.html">model/ClickwrapRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapScheduledReacceptance.html">model/ClickwrapScheduledReacceptance</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapScheduledReacceptance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapsDeleteResponse.html">model/ClickwrapsDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapsDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapTransferRequest.html">model/ClickwrapTransferRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapTransferRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersion.html">model/ClickwrapVersion</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersion.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionDeleteResponse.html">model/ClickwrapVersionDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionResponse.html">model/ClickwrapVersionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsDeleteResponse.html">model/ClickwrapVersionsDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsPagedResponse.html">model/ClickwrapVersionsPagedResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsPagedResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsResponse.html">model/ClickwrapVersionsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionSummaryResponse.html">model/ClickwrapVersionSummaryResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionSummaryResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ContainerStyles.html">model/ContainerStyles</a><ul class='methods'><li data-type='method'><a href="module-model_ContainerStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ConversionDocument.html">model/ConversionDocument</a><ul class='methods'><li data-type='method'><a href="module-model_ConversionDocument.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DataField.html">model/DataField</a><ul class='methods'><li data-type='method'><a href="module-model_DataField.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DisclosureLinkStyles.html">model/DisclosureLinkStyles</a><ul class='methods'><li data-type='method'><a href="module-model_DisclosureLinkStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DisplaySettings.html">model/DisplaySettings</a><ul class='methods'><li data-type='method'><a href="module-model_DisplaySettings.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Document.html">model/Document</a><ul class='methods'><li data-type='method'><a href="module-model_Document.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentConversionRequest.html">model/DocumentConversionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentConversionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentConversionResponse.html">model/DocumentConversionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentConversionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentData.html">model/DocumentData</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentData.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentLinkStyles.html">model/DocumentLinkStyles</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentLinkStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentLinkStylesFocus.html">model/DocumentLinkStylesFocus</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentLinkStylesFocus.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorDetails.html">model/ErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_HeaderStyles.html">model/HeaderStyles</a><ul class='methods'><li data-type='method'><a href="module-model_HeaderStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_HtmlResult.html">model/HtmlResult</a><ul class='methods'><li data-type='method'><a href="module-model_HtmlResult.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecipientCopyRequest.html">model/RecipientCopyRequest</a><ul class='methods'><li data-type='method'><a href="module-model_RecipientCopyRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ServiceInformation.html">model/ServiceInformation</a><ul class='methods'><li data-type='method'><a href="module-model_ServiceInformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ServiceVersion.html">model/ServiceVersion</a><ul class='methods'><li data-type='method'><a href="module-model_ServiceVersion.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateAgreementRequest.html">model/UpdateAgreementRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateAgreementRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementRequest.html">model/UserAgreementRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementResponse.html">model/UserAgreementResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementResponseStyle.html">model/UserAgreementResponseStyle</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementResponseStyle.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="Strategy.html">Strategy</a><ul class='methods'><li data-type='method'><a href="Strategy.html#_convertProfileFields">_convertProfileFields</a></li><li data-type='method'><a href="Strategy.html#authenticate">authenticate</a></li><li data-type='method'><a href="Strategy.html#authorizationParams">authorizationParams</a></li><li data-type='method'><a href="Strategy.html#parseErrorResponse">parseErrorResponse</a></li><li data-type='method'><a href="Strategy.html#userProfile">userProfile</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-api_AccountsApi.html">api/AccountsApi</a><ul class='methods'><li data-type='method'><a href="module-api_AccountsApi.html#createBulkClickwrapAgreements">createBulkClickwrapAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createClickwrap">createClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createClickwrapVersion">createClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#createHasAgreed">createHasAgreed</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrap">deleteClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwraps">deleteClickwraps</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrapVersion">deleteClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#deleteClickwrapVersions">deleteClickwrapVersions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreement">getAgreement</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreementDocument">getAgreementDocument</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getAgreementPdf">getAgreementPdf</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrap">getClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapAgreements">getClickwrapAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwraps">getClickwraps</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersion">getClickwrapVersion</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersionAgreements">getClickwrapVersionAgreements</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getClickwrapVersions">getClickwrapVersions</a></li><li data-type='method'><a href="module-api_AccountsApi.html#getServiceInformation">getServiceInformation</a></li><li data-type='method'><a href="module-api_AccountsApi.html#updateClickwrap">updateClickwrap</a></li><li data-type='method'><a href="module-api_AccountsApi.html#updateClickwrapVersion">updateClickwrapVersion</a></li></ul></li><li><a href="module-ApiClient.html">ApiClient</a><ul class='methods'><li data-type='method'><a href="module-ApiClient.html#.constructFromObject">constructFromObject</a></li><li data-type='method'><a href="module-ApiClient.html#.convertToType">convertToType</a></li><li data-type='method'><a href="module-ApiClient.html#.parseDate">parseDate</a></li><li data-type='method'><a href="module-ApiClient.html#addDefaultHeader">addDefaultHeader</a></li><li data-type='method'><a href="module-ApiClient.html#applyAuthToRequest">applyAuthToRequest</a></li><li data-type='method'><a href="module-ApiClient.html#buildCollectionParam">buildCollectionParam</a></li><li data-type='method'><a href="module-ApiClient.html#buildUrl">buildUrl</a></li><li data-type='method'><a href="module-ApiClient.html#callApi">callApi</a></li><li data-type='method'><a href="module-ApiClient.html#configureJWTAuthorizationFlow">configureJWTAuthorizationFlow</a></li><li data-type='method'><a href="module-ApiClient.html#deserialize">deserialize</a></li><li data-type='method'><a href="module-ApiClient.html#generateAccessToken">generateAccessToken</a></li><li data-type='method'><a href="module-ApiClient.html#getAuthorizationUri">getAuthorizationUri</a></li><li data-type='method'><a href="module-ApiClient.html#getBasePath">getBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getJWTUri">getJWTUri</a></li><li data-type='method'><a href="module-ApiClient.html#getOAuthBasePath">getOAuthBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#getUserInfo">getUserInfo</a></li><li data-type='method'><a href="module-ApiClient.html#isFileParam">isFileParam</a></li><li data-type='method'><a href="module-ApiClient.html#isJsonMime">isJsonMime</a></li><li data-type='method'><a href="module-ApiClient.html#jsonPreferredMime">jsonPreferredMime</a></li><li data-type='method'><a href="module-ApiClient.html#normalizeParams">normalizeParams</a></li><li data-type='method'><a href="module-ApiClient.html#paramToString">paramToString</a></li><li data-type='method'><a href="module-ApiClient.html#setBasePath">setBasePath</a></li><li data-type='method'><a href="module-ApiClient.html#setOAuthBasePath">setOAuthBasePath</a></li></ul></li><li><a href="module-index.html">index</a></li><li><a href="module-model_AgreeButtonStyles.html">model/AgreeButtonStyles</a><ul class='methods'><li data-type='method'><a href="module-model_AgreeButtonStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_AgreementStatementStyles.html">model/AgreementStatementStyles</a><ul class='methods'><li data-type='method'><a href="module-model_AgreementStatementStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_BaseAgreeButtonStyles.html">model/BaseAgreeButtonStyles</a><ul class='methods'><li data-type='method'><a href="module-model_BaseAgreeButtonStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_BulkClickwrapRequest.html">model/BulkClickwrapRequest</a><ul class='methods'><li data-type='method'><a href="module-model_BulkClickwrapRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapAgreementsResponse.html">model/ClickwrapAgreementsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapAgreementsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapDeleteResponse.html">model/ClickwrapDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapRequest.html">model/ClickwrapRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapScheduledReacceptance.html">model/ClickwrapScheduledReacceptance</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapScheduledReacceptance.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapsDeleteResponse.html">model/ClickwrapsDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapsDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapTransferRequest.html">model/ClickwrapTransferRequest</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapTransferRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersion.html">model/ClickwrapVersion</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersion.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionDeleteResponse.html">model/ClickwrapVersionDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionResponse.html">model/ClickwrapVersionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsDeleteResponse.html">model/ClickwrapVersionsDeleteResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsDeleteResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsPagedResponse.html">model/ClickwrapVersionsPagedResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsPagedResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionsResponse.html">model/ClickwrapVersionsResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionsResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ClickwrapVersionSummaryResponse.html">model/ClickwrapVersionSummaryResponse</a><ul class='methods'><li data-type='method'><a href="module-model_ClickwrapVersionSummaryResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ContainerStyles.html">model/ContainerStyles</a><ul class='methods'><li data-type='method'><a href="module-model_ContainerStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ConversionDocument.html">model/ConversionDocument</a><ul class='methods'><li data-type='method'><a href="module-model_ConversionDocument.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DataField.html">model/DataField</a><ul class='methods'><li data-type='method'><a href="module-model_DataField.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DisclosureLinkStyles.html">model/DisclosureLinkStyles</a><ul class='methods'><li data-type='method'><a href="module-model_DisclosureLinkStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DisplaySettings.html">model/DisplaySettings</a><ul class='methods'><li data-type='method'><a href="module-model_DisplaySettings.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_Document.html">model/Document</a><ul class='methods'><li data-type='method'><a href="module-model_Document.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentConversionRequest.html">model/DocumentConversionRequest</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentConversionRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentConversionResponse.html">model/DocumentConversionResponse</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentConversionResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentData.html">model/DocumentData</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentData.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentLinkStyles.html">model/DocumentLinkStyles</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentLinkStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_DocumentLinkStylesFocus.html">model/DocumentLinkStylesFocus</a><ul class='methods'><li data-type='method'><a href="module-model_DocumentLinkStylesFocus.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ErrorDetails.html">model/ErrorDetails</a><ul class='methods'><li data-type='method'><a href="module-model_ErrorDetails.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_HeaderStyles.html">model/HeaderStyles</a><ul class='methods'><li data-type='method'><a href="module-model_HeaderStyles.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_HtmlResult.html">model/HtmlResult</a><ul class='methods'><li data-type='method'><a href="module-model_HtmlResult.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_OauthAccess.html">model/OauthAccess</a><ul class='methods'><li data-type='method'><a href="module-model_OauthAccess.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_RecipientCopyRequest.html">model/RecipientCopyRequest</a><ul class='methods'><li data-type='method'><a href="module-model_RecipientCopyRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ServiceInformation.html">model/ServiceInformation</a><ul class='methods'><li data-type='method'><a href="module-model_ServiceInformation.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_ServiceVersion.html">model/ServiceVersion</a><ul class='methods'><li data-type='method'><a href="module-model_ServiceVersion.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UpdateAgreementRequest.html">model/UpdateAgreementRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UpdateAgreementRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementRequest.html">model/UserAgreementRequest</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementRequest.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementResponse.html">model/UserAgreementResponse</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementResponse.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserAgreementResponseStyle.html">model/UserAgreementResponseStyle</a><ul class='methods'><li data-type='method'><a href="module-model_UserAgreementResponseStyle.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-model_UserInfo.html">model/UserInfo</a><ul class='methods'><li data-type='method'><a href="module-model_UserInfo.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Account.html">oauth/Account</a></li><li><a href="module-oauth_Link.html">oauth/Link</a><ul class='methods'><li data-type='method'><a href="module-oauth_Link.html#.constructFromObject">constructFromObject</a></li></ul></li><li><a href="module-oauth_Organization.html">oauth/Organization</a><ul class='methods'><li data-type='method'><a href="module-oauth_Organization.html#.constructFromObject">constructFromObject</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#parse">parse</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">module:api/AccountsApi</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        module:api/AccountsApi
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+    
+
+    <h4 class="name" id="module:api/AccountsApi"><span class="type-signature"></span>new module:api/AccountsApi<span class="signature">(apiClient)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line41">line 41</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Constructs a new AccountsApi.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>apiClient</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-ApiClient.html">module:ApiClient</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional API client implementation to use,<br>
+default to <code>module:ApiClient#instance</code> if unspecified.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="createBulkClickwrapAgreements"><span class="type-signature"></span>createBulkClickwrapAgreements<span class="signature">(accountId, clickwrapId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line74">line 74</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Starts an export of clickwrap agreements for a specified date range.<br>
+Starts an asynchronus process to export clickwrap agreements for a specified date range.<br>
+An email will be sent to the creator after it has been processed.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>bulkClickwrapRequest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_BulkClickwrapRequest.html">module:model/BulkClickwrapRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Data used to start a bulk agreements export.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~createBulkClickwrapAgreementsCallback">module:api/AccountsApi~createBulkClickwrapAgreementsCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createClickwrap"><span class="type-signature"></span>createClickwrap<span class="signature">(accountId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line143">line 143</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Creates a clickwrap for an account.<br>
+Creates a clickwrap for an account.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapRequest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapRequest.html">module:model/ClickwrapRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Request body for working with clickwrap.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~createClickwrapCallback">module:api/AccountsApi~createClickwrapCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionSummaryResponse.html"><code>module:model/ClickwrapVersionSummaryResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createClickwrapVersion"><span class="type-signature"></span>createClickwrapVersion<span class="signature">(accountId, clickwrapId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line207">line 207</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Creates a new clickwrap version.<br>
+Creates a new version of an existing clickwrap. In a new version, you can replace the uploaded documents, change the display settings, and change the name of the clickwrap. The version number is automatically incremented based on the last version of the clickwrap.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapRequest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapRequest.html">module:model/ClickwrapRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Request body for working with clickwrap.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~createClickwrapVersionCallback">module:api/AccountsApi~createClickwrapVersionCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionSummaryResponse.html"><code>module:model/ClickwrapVersionSummaryResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="createHasAgreed"><span class="type-signature"></span>createHasAgreed<span class="signature">(accountId, clickwrapId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line356">line 356</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Creates a unique URL for the agreement that you can embed in your application.<br>
+Creates a unique URL for the agreement<br>
+that you can embed in your application.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code> and <code>click.send</code>.</p>
+<p>The request must include at least the<br>
+<code>clientUserId</code>. This is a value that you<br>
+generate to identify the unique recipient<br>
+of the agreement.</p>
+<p>If you are using a <a href="/docs/click-api/click101/customize-clickwrap-fields/#add-dynamic-content-to-your-clickwrap">dynamic content</a> document,<br>
+you can supply the values in the documentData<br>
+property of the request, like this:</p>
+<pre class="prettyprint source lang-json"><code>{
+  &quot;clientUserId&quot;: &quot;cl-bc7f-48a9&quot;,
+  &quot;documentData&quot;: {
+    &quot;fullName&quot;: &quot;T. J. Fanning&quot;,
+    &quot;email&quot;: &quot;tj@example.com&quot;,
+    &quot;company&quot;: &quot;Fanning Indusdtries&quot;,
+    &quot;title&quot;: &quot;Cat wrangler&quot;,
+    &quot;date&quot;: &quot;2022-10-13T05:17:14-07:00&quot;
+  }
+}
+</code></pre>
+<p>A response will look like this.<br>
+The <code>agreementUrl</code> is unique to the user identified by the <code>clientUserId</code>.<br>
+Your user can open the URL to approve the agreement.<br>
+The <code>documentData</code> property appears only if you provided it in the request.</p>
+<pre class="prettyprint source lang-json"><code>{
+  &quot;accountId&quot;: &quot;624e3e00-xxxx-xxxx-xxxx-43918c520dab&quot;,
+  &quot;clickwrapId&quot;: &quot;0e64e4a7-xxxx-xxxx-xxxx-ce5a93b162af&quot;,
+  &quot;clientUserId&quot;: &quot;tcl-bc7f-48a9j&quot;,
+  &quot;agreementId&quot;: &quot;1f346c7d-xxxx-xxxx-xxxx-a5c968666785&quot;,
+  &quot;documents&quot;: [ . . .],
+  &quot;consumerDisclosureEnabled&quot;: true,
+  &quot;agreementUrl&quot;: &quot;https://demo.docusign.net/clickapi/v1/redeem?agreementToken=AcTZT8g ... cxEqrUsA1lQ8DPPy05dE0&quot;,
+  &quot;createdOn&quot;: &quot;2022-10-20T16:27:25.1287685Z&quot;,
+  &quot;status&quot;: &quot;created&quot;,
+  &quot;versionId&quot;: &quot;5957716d-xxxx-xxxx-xxxx-e1594f00ff12&quot;,
+  &quot;versionNumber&quot;: 1,
+  &quot;settings&quot;: {
+    &quot;displayName&quot;: &quot;Agree with me&quot;,
+    &quot;hasDeclineButton&quot;: true,
+    .  . .
+    &quot;statementAlignment&quot;: &quot;bottom&quot;
+  },
+  &quot;documentData&quot;: {
+    &quot;fullName&quot;: &quot;T. J. Fanning&quot;,
+    &quot;email&quot;: &quot;tj@example.com&quot;,
+    &quot;company&quot;: &quot;Fanning Indusdtries&quot;,
+    &quot;title&quot;: &quot;Cat wrangler&quot;,
+    &quot;date&quot;: &quot;2022-10-13T05:17:14-07:00&quot;
+  }
+}
+</code></pre>
+<p>This method returns the following<br>
+result codes and response bodies<br>
+depending on whether the user has agreed.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Agreed</th>
+<th style="text-align:left">Response code</th>
+<th style="text-align:left">Response body</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">No</td>
+<td style="text-align:left">201</td>
+<td style="text-align:left">Full response as above</td>
+</tr>
+<tr>
+<td style="text-align:left">Yes</td>
+<td style="text-align:left">200</td>
+<td style="text-align:left">No response (empty)</td>
+</tr>
+</tbody>
+</table>
+<h3>Related topics</h3>
+<ul>
+<li><a href="/docs/click-api/click101/customize-clickwrap-fields/#add-dynamic-content-to-your-clickwrap">Add dynamic content to your clickwrap</a></li>
+<li><a href="/docs/click-api/how-to/embed-clickwraps/">How to embed a clickwrap</a></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userAgreementRequest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_UserAgreementRequest.html">module:model/UserAgreementRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Data used to create the agreement.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~createHasAgreedCallback">module:api/AccountsApi~createHasAgreedCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_UserAgreementResponse.html"><code>module:model/UserAgreementResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteClickwrap"><span class="type-signature"></span>deleteClickwrap<span class="signature">(accountId, clickwrapId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line427">line 427</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Deletes a clickwrap and all of its versions.<br>
+Deletes the clickwrap specified by <code>clickwrapId</code> and all of its versions.<br>
+Active clickwraps are not deleted</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>versions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A comma-separated list of versions to delete.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~deleteClickwrapCallback">module:api/AccountsApi~deleteClickwrapCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionsDeleteResponse.html"><code>module:model/ClickwrapVersionsDeleteResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteClickwraps"><span class="type-signature"></span>deleteClickwraps<span class="signature">(accountId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line642">line 642</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Deletes clickwraps for an account.<br>
+Deletes all clickwraps for an account<br>
+or only the ones specified in the<br>
+<code>clickwrapIds</code> query parameter.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapIds</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A comma-separated list of clickwrap IDs to delete.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~deleteClickwrapsCallback">module:api/AccountsApi~deleteClickwrapsCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapsDeleteResponse.html"><code>module:model/ClickwrapsDeleteResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteClickwrapVersion"><span class="type-signature"></span>deleteClickwrapVersion<span class="signature">(accountId, clickwrapId, versionId, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line499">line 499</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Deletes a clickwrap version by version ID.<br>
+Deletes the clickwrap version specified by <code>versionId</code> of the clickwrap specified by <code>clickwrapId</code>.<br>
+<em>Note:</em>* This endpoint requires the version ID (a GUID), not the version number (an integer).</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>versionId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap version.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~deleteClickwrapVersionCallback">module:api/AccountsApi~deleteClickwrapVersionCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionDeleteResponse.html"><code>module:model/ClickwrapVersionDeleteResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="deleteClickwrapVersions"><span class="type-signature"></span>deleteClickwrapVersions<span class="signature">(accountId, clickwrapId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line570">line 570</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Deletes the versions of a clickwrap.<br>
+Deletes all versions of a clickwrap,<br>
+or only the ones specified in the<br>
+<code>clickwrapVersionIds</code> query parameter.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapVersionIds</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A comma-separated list of clickwrap version IDs to delete.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~deleteClickwrapVersionsCallback">module:api/AccountsApi~deleteClickwrapVersionsCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionsDeleteResponse.html"><code>module:model/ClickwrapVersionsDeleteResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getAgreement"><span class="type-signature"></span>getAgreement<span class="signature">(accountId, clickwrapId, agreementId, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line706">line 706</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets a specific agreement for a specified clickwrap.<br>
+Gets the agreement specified by <code>agreementId</code>.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code> or <code>click.send</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>agreementId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The agreement ID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getAgreementCallback">module:api/AccountsApi~getAgreementCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_UserAgreementResponse.html"><code>module:model/UserAgreementResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getAgreementDocument"><span class="type-signature"></span>getAgreementDocument<span class="signature">(accountId, clickwrapId, versionId, orderOrDisclosure, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line775">line 775</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Downloads a document at an order within the agreement.<br>
+Downloads a specific document from the agreement presented to the user.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.sign</code></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>versionId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap version.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>orderOrDisclosure</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The order of the document or consumer_disclosure.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getAgreementDocumentCallback">module:api/AccountsApi~getAgreementDocumentCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_Document.html"><code>module:model/Document</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getAgreementPdf"><span class="type-signature"></span>getAgreementPdf<span class="signature">(accountId, clickwrapId, agreementId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line854">line 854</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets the completed user agreement PDF.<br>
+Gets the PDF of  <code>agreementId</code> for the clickwrap specified by <code>clickwrapId</code>.</p>
+<p>The response to this method is the bytes of the PDF file.<br>
+The response includes the HTTP header <code>application/pdf</code>.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code> or <code>click.send</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>agreementId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The agreement ID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>includeCoc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>When <strong>true,</strong> the Certificate of Completion will be appended to the PDF. The default value is <strong>false.</strong></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getAgreementPdfCallback">module:api/AccountsApi~getAgreementPdfCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <code>Object</code></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getClickwrap"><span class="type-signature"></span>getClickwrap<span class="signature">(accountId, clickwrapId, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line929">line 929</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets a  single clickwrap object.<br>
+Retrieves the definition of the specified clickwrap.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getClickwrapCallback">module:api/AccountsApi~getClickwrapCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionResponse.html"><code>module:model/ClickwrapVersionResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getClickwrapAgreements"><span class="type-signature"></span>getClickwrapAgreements<span class="signature">(accountId, clickwrapId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line996">line 996</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Get user agreements<br>
+Retrieves the user agreements for a specified clickwrap. Each <code>userAgreementResponse</code> object describes a single user's response to the clickwrap. You can also filter the agreements by date, status, page number, and client user ID.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientUserId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The client user ID to filter to a single user's agreements.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fromDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The earliest date to return agreements from.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The results for this endpoint are paginated. Use this parameter to indicate which page to return. The <code>minimumPagesRemaining</code> value in the response indicates whether to continue querying for additional pages.  For example, if the page size is 40: * If this property is set to 0 (the default), the endpoint returns results 1-40. * If this property is set to 1, the endpoint returns results 41-80.  The default value is 0.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>status</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>User agreement status. One of:  - <code>created</code> - <code>agreed</code> - <code>declined</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>toDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The latest date to return agreements from.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getClickwrapAgreementsCallback">module:api/AccountsApi~getClickwrapAgreementsCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapAgreementsResponse.html"><code>module:model/ClickwrapAgreementsResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getClickwraps"><span class="type-signature"></span>getClickwraps<span class="signature">(accountId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1298">line 1298</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets all the clickwraps for a user.<br>
+Gets all the clickwraps for a user.<br>
+<em>Note:</em>* This endpoint returns a list of <code>clickwrapVersionSummaryResponse</code> objects. Each version of each clickwrap is returned as a separate entry in the list.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>filter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Names of columns by which to filter and values to match on.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fromDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The earliest date to return clickwraps from.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The name of the clickwraps to return.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>ownerUserId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The user ID of the owner.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The results for this endpoint are paginated. Use this parameter to indicate which page to return. The <code>minimumPagesRemaining</code> value in the response indicates whether to continue querying for additional pages.  For example, if the page size is 40: * If this property is set to 0 (the default), the endpoint returns results 1-40. * If this property is set to 1, the endpoint returns results 41-80.  The default value is 0.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>status</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The status of the clickwraps to filter by. One of:  - <code>active</code> - <code>inactive</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>toDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The latest date to return clickwraps from.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getClickwrapsCallback">module:api/AccountsApi~getClickwrapsCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionsResponse.html"><code>module:model/ClickwrapVersionsResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getClickwrapVersion"><span class="type-signature"></span>getClickwrapVersion<span class="signature">(accountId, clickwrapId, versionId, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1072">line 1072</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets a specific version of a clickwrap by version ID.<br>
+Gets the version specified by <code>versionId</code>  from the clickwrap <code>clickwrapId</code>.<br>
+<em>Note:</em>* This endpoint requires the version ID (a GUID), not the version number (an integer).</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>versionId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap version.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getClickwrapVersionCallback">module:api/AccountsApi~getClickwrapVersionCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionResponse.html"><code>module:model/ClickwrapVersionResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getClickwrapVersionAgreements"><span class="type-signature"></span>getClickwrapVersionAgreements<span class="signature">(accountId, clickwrapId, versionId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1148">line 1148</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets the agreement responses for a clickwrap version by version ID.<br>
+Gets the agreement responses for a specific version.<br>
+<em>Note:</em>* This endpoint requires the version ID (a GUID), not the version number (an integer).</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>versionId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap version.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clientUserId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The client user ID to filter to a single user's agreements.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fromDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The earliest date to return agreements from.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pageNumber</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The results for this endpoint are paginated. Use this parameter to indicate which page to return. The <code>minimumPagesRemaining</code> value in the response indicates whether to continue querying for additional pages.  For example, if the page size is 40: * If this property is set to 0 (the default), the endpoint returns results 1-40. * If this property is set to 1, the endpoint returns results 41-80.  The default value is 0.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>status</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>User agreement status. One of:  - <code>created</code> - <code>agreed</code> - <code>declined</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>toDate</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The latest date to return agreements from.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getClickwrapVersionAgreementsCallback">module:api/AccountsApi~getClickwrapVersionAgreementsCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapAgreementsResponse.html"><code>module:model/ClickwrapAgreementsResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getClickwrapVersions"><span class="type-signature"></span>getClickwrapVersions<span class="signature">(accountId, clickwrapId, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1227">line 1227</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets all the versions of a clickwrap.<br>
+Gets all the versions of a clickwrap for an account.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getClickwrapVersionsCallback">module:api/AccountsApi~getClickwrapVersionsCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionsPagedResponse.html"><code>module:model/ClickwrapVersionsPagedResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getServiceInformation"><span class="type-signature"></span>getServiceInformation<span class="signature">(callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1365">line 1365</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Gets the current version and other information about the Click API.<br>
+The response includes information about the Click API, including the service version, build version, and linked sites.</p>
+<p>This method does not require authentication.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~getServiceInformationCallback">module:api/AccountsApi~getServiceInformationCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ServiceInformation.html"><code>module:model/ServiceInformation</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="updateClickwrap"><span class="type-signature"></span>updateClickwrap<span class="signature">(accountId, clickwrapId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1416">line 1416</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Update a clickwrap by ID.<br>
+Update a subset of properties on the clickwrap.</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapTransferRequest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapTransferRequest.html">module:model/ClickwrapTransferRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Data used to transfer a clickwrap from one user to another.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~updateClickwrapCallback">module:api/AccountsApi~updateClickwrapCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionSummaryResponse.html"><code>module:model/ClickwrapVersionSummaryResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="updateClickwrapVersion"><span class="type-signature"></span>updateClickwrapVersion<span class="signature">(accountId, clickwrapId, versionId, optsOrCallback, callback)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1489">line 1489</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Updates clickwrap version status and ownership.<br>
+Updates the clickwrap version status and ownership by transferring from previous user ID to new user ID.<br>
+<em>Note:</em>* This endpoint requires the version ID (a GUID), not the version number (an integer).</p>
+<p><a href="/docs/click-api/click101/auth/">Required authentication scopes</a>: <code>click.manage</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>accountId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The external account number (int) or account ID GUID.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>versionId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The ID of the clickwrap version.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>optsOrCallback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Optional parameters, if you are passing no optional parameters, you can either pass a null or omit this parameter entirely.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>clickwrapRequest</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapRequest.html">module:model/ClickwrapRequest</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Request body for working with clickwrap.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-api_AccountsApi.html#~updateClickwrapVersionCallback">module:api/AccountsApi~updateClickwrapVersionCallback</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The callback function, accepting three arguments: error, data, response<br>
+data is of type: <a href="module-model_ClickwrapVersionSummaryResponse.html"><code>module:model/ClickwrapVersionSummaryResponse</code></a></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
+
+        
+                
+
+    
+
+    <h4 class="name" id="~createBulkClickwrapAgreementsCallback"><span class="type-signature"></span>createBulkClickwrapAgreementsCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line54">line 54</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the createBulkClickwrapAgreements operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>This operation does not return a value.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~createClickwrapCallback"><span class="type-signature"></span>createClickwrapCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line124">line 124</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the createClickwrap operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionSummaryResponse.html">module:model/ClickwrapVersionSummaryResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~createClickwrapVersionCallback"><span class="type-signature"></span>createClickwrapVersionCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line187">line 187</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the createClickwrapVersion operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionSummaryResponse.html">module:model/ClickwrapVersionSummaryResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~createHasAgreedCallback"><span class="type-signature"></span>createHasAgreedCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line257">line 257</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the createHasAgreed operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_UserAgreementResponse.html">module:model/UserAgreementResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~deleteClickwrapCallback"><span class="type-signature"></span>deleteClickwrapCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line406">line 406</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the deleteClickwrap operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionsDeleteResponse.html">module:model/ClickwrapVersionsDeleteResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~deleteClickwrapsCallback"><span class="type-signature"></span>deleteClickwrapsCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line621">line 621</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the deleteClickwraps operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapsDeleteResponse.html">module:model/ClickwrapsDeleteResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~deleteClickwrapVersionCallback"><span class="type-signature"></span>deleteClickwrapVersionCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line478">line 478</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the deleteClickwrapVersion operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionDeleteResponse.html">module:model/ClickwrapVersionDeleteResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~deleteClickwrapVersionsCallback"><span class="type-signature"></span>deleteClickwrapVersionsCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line548">line 548</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the deleteClickwrapVersions operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionsDeleteResponse.html">module:model/ClickwrapVersionsDeleteResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getAgreementCallback"><span class="type-signature"></span>getAgreementCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line687">line 687</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getAgreement operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_UserAgreementResponse.html">module:model/UserAgreementResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getAgreementDocumentCallback"><span class="type-signature"></span>getAgreementDocumentCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line755">line 755</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getAgreementDocument operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_Document.html">module:model/Document</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getAgreementPdfCallback"><span class="type-signature"></span>getAgreementPdfCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line830">line 830</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getAgreementPdf operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getClickwrapAgreementsCallback"><span class="type-signature"></span>getClickwrapAgreementsCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line972">line 972</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getClickwrapAgreements operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapAgreementsResponse.html">module:model/ClickwrapAgreementsResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getClickwrapCallback"><span class="type-signature"></span>getClickwrapCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line911">line 911</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getClickwrap operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionResponse.html">module:model/ClickwrapVersionResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getClickwrapsCallback"><span class="type-signature"></span>getClickwrapsCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1270">line 1270</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getClickwraps operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionsResponse.html">module:model/ClickwrapVersionsResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getClickwrapVersionAgreementsCallback"><span class="type-signature"></span>getClickwrapVersionAgreementsCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1121">line 1121</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getClickwrapVersionAgreements operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapAgreementsResponse.html">module:model/ClickwrapAgreementsResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getClickwrapVersionCallback"><span class="type-signature"></span>getClickwrapVersionCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1051">line 1051</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getClickwrapVersion operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionResponse.html">module:model/ClickwrapVersionResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getClickwrapVersionsCallback"><span class="type-signature"></span>getClickwrapVersionsCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1209">line 1209</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getClickwrapVersions operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionsPagedResponse.html">module:model/ClickwrapVersionsPagedResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~getServiceInformationCallback"><span class="type-signature"></span>getServiceInformationCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1349">line 1349</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the getServiceInformation operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ServiceInformation.html">module:model/ServiceInformation</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~updateClickwrapCallback"><span class="type-signature"></span>updateClickwrapCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1396">line 1396</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the updateClickwrap operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionSummaryResponse.html">module:model/ClickwrapVersionSummaryResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                
+
+    
+
+    <h4 class="name" id="~updateClickwrapVersionCallback"><span class="type-signature"></span>updateClickwrapVersionCallback<span class="signature">(error, data, If)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="api_AccountsApi.js.html">api/AccountsApi.js</a>, <a href="api_AccountsApi.js.html#line1466">line 1466</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>(Optional) Callback function to receive the result of the updateClickwrapVersion operation. If none specified a Promise will be returned.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>error</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Error message, if any.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-model_ClickwrapVersionSummaryResponse.html">module:model/ClickwrapVersionSummaryResponse</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The data returned by the service call.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>If</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>a callback was specified, the response The complete HTTP response, else a Promise resolving the response Data.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Fri Jun 16 2023 14:58:41 GMT-0700 (Pacific Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
