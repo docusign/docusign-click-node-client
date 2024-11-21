@@ -144,13 +144,13 @@
   const normalizeResponseFormat = (res) => {
     if(res){
     const { data: body, headers: header,  status: statusCode} = res;
-    return {
-      statusCode,
-      header,
-      body
+      return {
+        statusCode,
+        header,
+        body
     }
-  }
-  return null;
+    }
+    return null;
   };
 
   var deriveOAuthBasePathFromRestBasePath = function (basePath) {
@@ -276,6 +276,16 @@
     value
   ) {
     defaultHeaders[header] = value;
+  };
+
+  /**
+   * Sets default JWT authorization token for APIs.
+   */
+  exports.prototype.setJWTToken = function setJWTToken(token) {
+    if(!token){
+      throw new Error("Missing the required parameter 'token' when calling setJWTToken.");
+    }
+    defaultHeaders["Authorization"] = `Bearer ${token}`;
   };
 
   /**
